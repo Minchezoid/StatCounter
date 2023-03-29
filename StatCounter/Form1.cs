@@ -19,7 +19,7 @@ namespace StatCounter
         {
             InitializeComponent();
 
-            dataGridView1.RowCount = 62;
+            dataGridView1.RowCount = 63;
             dataGridView1.ColumnCount = 3;
             dataGridView1.Columns[0].HeaderText = "Персонаж";
             dataGridView1.Columns[1].HeaderText = "Статы";
@@ -753,6 +753,17 @@ namespace StatCounter
                                                                       new string[] { "Бонус Пиро урона %" }, //Кубане
                                                                       new string[] { "Крит. урон %", "Шанс крит. попадания %" } }); //Шапке
 
+                //Мика
+                Character Mika = new Character("Мика", new string[] { "Церемония древней знати" }, //Сигнатурные сеты для перса
+                                                         new string[] { "Моллюск морских красок" }, //Альтернативные фулл сеты, которые тоже нормик
+                                                         new string[] { "Эмблема рассечённой судьбы", "Стойкость Миллелита" }, //Сеты которые можно как солянку
+                                                         new string[] { "Восст. энергии %", "HP %" }, //Главные статы
+                                                         new string[] { "Сила атаки %", "Крит. урон %", "Шанс крит. попадания %" }, //Побочные статы
+                                                         new string[] {  }, //Ладно пусть будут
+                                                         new string[][] { new string[] { "HP %", "Восст. энергии %" }, //Нужные верхние статы на часах
+                                                                      new string[] { "HP %" }, //Кубане
+                                                                      new string[] { "HP %" } }); //Шапке
+
                 int i = 0;
                 WriteInTable(Diona, a, Diona.Name, i); i++;
                 WriteInTable(HuTao, a, HuTao.Name, i); i++;
@@ -815,6 +826,7 @@ namespace StatCounter
                 WriteInTable(Sara, a, Sara.Name, i); i++;
                 WriteInTable(Cyno, a, Cyno.Name, i); i++;
                 WriteInTable(Dehya, a, Dehya.Name, i); i++;
+                WriteInTable(Mika, a, Mika.Name, i); i++;
             }
         }
         //Микрофункция возвращающая результат чекинга арта на предмет его профпригодности для конкретного перса
