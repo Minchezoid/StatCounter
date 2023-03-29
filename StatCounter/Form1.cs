@@ -895,6 +895,8 @@ namespace StatCounter
                 { WriteInTable(Cyno, a, Cyno.Name, i); i++; }
                 if (textBox_fnd.Text == "Дэхья")
                 { WriteInTable(Dehya, a, Dehya.Name, i); i++; }
+                if (textBox_fnd.Text == "Мика")
+                { WriteInTable(Mika, a, Mika.Name, i); i++; }
 
 
                 
@@ -959,6 +961,7 @@ namespace StatCounter
                 WriteInTable(Sara, a, Sara.Name, i); i++;
                 WriteInTable(Cyno, a, Cyno.Name, i); i++;
                 WriteInTable(Dehya, a, Dehya.Name, i); i++;
+                WriteInTable(Mika, a, Mika.Name, i); i++;
             }
         }
         //Микрофункция возвращающая результат чекинга арта на предмет его профпригодности для конкретного перса
