@@ -148,13 +148,6 @@ namespace StatCounter
             }
             //Третий по полезности стат переливаем во второй, деля его на 2
             second += (third / 2);
-            //if (third/2 > 0.9)
-            //{
-            //    third += 0.2;
-            //    second += (third / 2) - ((third / 2) - Math.Truncate(third / 2));
-            //}
-
-            
 
             //Считаем главные статы и добавляем чуточку во второй если у нас заминОЧКА
             if (first - Math.Truncate(first) > 0.8)
@@ -366,31 +359,6 @@ namespace StatCounter
                     else
                         return "Идеально";
                 }
-
-                //if (first < 2)
-                //    return "Говно";
-                //else if (first == 2)
-                //    if (second >= 3)
-                //        return "Хорошо";
-                //    else
-                //        return "Говно";
-                //else if (first == 3)
-                //    if (second >= 3)
-                //        return "Отлично";
-                //    else
-                //        return "Хорошо";
-                //else if (first == 4)
-                //    if (second >= 3)
-                //        return "Идеально";
-                //    else
-                //        return "Отлично";
-                //else if (first == 5)
-                //    if (second >= 1)
-                //        return "Идеально";
-                //    else
-                //        return "Отлично";
-                //else
-                //    return "Идеально";
             }
             else
                 return "Выбери кусок!";
