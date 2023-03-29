@@ -37,6 +37,7 @@
             this.textBox_er = new System.Windows.Forms.TextBox();
             this.textBox_def = new System.Windows.Forms.TextBox();
             this.textBox_hp = new System.Windows.Forms.TextBox();
+            this.textBox_fnd = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.comboBox_set = new System.Windows.Forms.ComboBox();
             this.comboBox_piece = new System.Windows.Forms.ComboBox();
             this.comboBox_mainstat = new System.Windows.Forms.ComboBox();
@@ -57,7 +59,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(165, 223);
+            this.button1.Location = new System.Drawing.Point(165, 240);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 42);
@@ -65,6 +67,7 @@
             this.button1.Text = "Чекнуть арт";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
             // 
             // textBox_atk
             // 
@@ -121,6 +124,14 @@
             this.textBox_hp.Name = "textBox_hp";
             this.textBox_hp.Size = new System.Drawing.Size(86, 20);
             this.textBox_hp.TabIndex = 2;
+            //
+            // textBox_fnd
+            //
+            this.textBox_fnd.Location = new System.Drawing.Point(316, 170);
+            this.textBox_fnd.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_fnd.Name = "textBox_fnd";
+            this.textBox_fnd.Size = new System.Drawing.Size(100, 20);
+            this.textBox_fnd.TabIndex = 8;
             // 
             // label1
             // 
@@ -191,11 +202,21 @@
             this.label7.Size = new System.Drawing.Size(33, 13);
             this.label7.TabIndex = 14;
             this.label7.Text = "HP %";
+            //
+            //  label 12 после 7 12 идет да да
+            //
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(336, 155);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(33, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "Персонаж";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(359, 133);
+            this.label9.Location = new System.Drawing.Point(359, 111);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(25, 13);
@@ -205,7 +226,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(347, 39);
+            this.label10.Location = new System.Drawing.Point(347, 19);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(37, 13);
@@ -215,7 +236,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(333, 87);
+            this.label11.Location = new System.Drawing.Point(333, 67);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 13);
@@ -252,7 +273,7 @@
             "Позолоченные сны",
             "Хроники Чертогов в пустыне",
             "Цветок потерянного рая"});
-            this.comboBox_set.Location = new System.Drawing.Point(279, 147);
+            this.comboBox_set.Location = new System.Drawing.Point(279, 125);
             this.comboBox_set.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_set.Name = "comboBox_set";
             this.comboBox_set.Size = new System.Drawing.Size(186, 21);
@@ -267,7 +288,7 @@
             "Часы",
             "Кубок",
             "Шапка"});
-            this.comboBox_piece.Location = new System.Drawing.Point(319, 54);
+            this.comboBox_piece.Location = new System.Drawing.Point(319, 34);
             this.comboBox_piece.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_piece.Name = "comboBox_piece";
             this.comboBox_piece.Size = new System.Drawing.Size(92, 21);
@@ -293,7 +314,7 @@
             "Бонус Гидро урона %",
             "Бонус Крио урона %",
             "Бонус физ. урона %"});
-            this.comboBox_mainstat.Location = new System.Drawing.Point(279, 102);
+            this.comboBox_mainstat.Location = new System.Drawing.Point(279, 82);
             this.comboBox_mainstat.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_mainstat.Name = "comboBox_mainstat";
             this.comboBox_mainstat.Size = new System.Drawing.Size(186, 21);
@@ -322,7 +343,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5.85F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 323);
             this.Controls.Add(this.button2);
@@ -330,6 +351,7 @@
             this.Controls.Add(this.comboBox_mainstat);
             this.Controls.Add(this.comboBox_piece);
             this.Controls.Add(this.comboBox_set);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -346,13 +368,14 @@
             this.Controls.Add(this.textBox_em);
             this.Controls.Add(this.textBox_critdmg);
             this.Controls.Add(this.textBox_critrate);
+            this.Controls.Add(this.textBox_fnd);
             this.Controls.Add(this.textBox_atk);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Калькулятор артов (каво?)";
+            this.Text = "Калькулятор артов (каво?)))";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -369,6 +392,7 @@
         private System.Windows.Forms.TextBox textBox_er;
         private System.Windows.Forms.TextBox textBox_def;
         private System.Windows.Forms.TextBox textBox_hp;
+        private System.Windows.Forms.TextBox textBox_fnd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -379,6 +403,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox_set;
         private System.Windows.Forms.ComboBox comboBox_piece;
         private System.Windows.Forms.ComboBox comboBox_mainstat;
