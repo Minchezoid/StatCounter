@@ -44,6 +44,15 @@ namespace StatCounter
             bool mistake = false;
 
 
+            if(comboBox_piece.Text == "Цветок")
+            {
+                comboBox_mainstat.Text = "HP - 4780";
+            }
+            if (comboBox_piece.Text == "Перо")
+            {
+                comboBox_mainstat.Text = "Сила атаки - 311";
+            }
+
             textBox_atk.Text = textBox_atk.Text.Replace(".", ",");
             textBox_hp.Text = textBox_hp.Text.Replace(".", ",");
             textBox_def.Text = textBox_def.Text.Replace(".", ",");
@@ -155,6 +164,55 @@ namespace StatCounter
                     MessageBox.Show("Неплохой казах получился бы!");
                     mistake = true;
                 }
+            }
+
+            double sum = 4;
+            if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 > 4)
+            {
+                if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 < 9)
+                {
+                    if (atk1 >= 1)
+                    {
+                        double num = atk1;
+                        sum -= num;
+                    }
+                    if (hp1 >= 1)
+                    {
+                        double num1 = hp1;
+                        sum -= num1;
+                    }
+                    if (def1 >= 1)
+                    {
+                        double num2 = def1;
+                        sum -= num2;
+                    }
+                    if (critdmg1 >= 1)
+                    {
+                        double num3 = critdmg1;
+                        sum -= num3;
+                    }
+                    if (critrate1 >= 1)
+                    {
+                        double num4 = critrate1;
+                        sum -= num4;
+                    }
+                    if (er1 >= 1)
+                    {
+                        double num5 = er1;
+                        sum -= num5;
+                    }
+                    if (em1 >= 1)
+                    {
+                        double num6 = em1;
+                        sum -= num6;
+                    }
+                }
+            }                       
+
+            if (sum < 0)
+            {
+                MessageBox.Show("Неверный формат ввода!");
+                mistake = true;
             }
 
             /*  if (atk > 0)
