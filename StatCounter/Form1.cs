@@ -66,13 +66,14 @@ namespace StatCounter
                 }
             }
 
-            double atk1 = Math.Round(atk / 5, 3); //5
-            double def1 = Math.Round(def / 6.2, 3); //6,2
-            double hp1 = Math.Round(hp / 5, 3); //5
-            double em1 = Math.Round(em / 20, 3); //20
-            double er1 = Math.Round(er / 5.5, 3); //5,5
-            double critdmg1 = Math.Round(critdmg / 6.6, 3); //6,6
-            double critrate1 = Math.Round(critrate / 3.3, 3); //3,3
+            double atk1 = Math.Round(atk / 5.8, 3);
+            double def1 = Math.Round(def / 6.5, 3);
+            double hp1 = Math.Round(hp / 5.8, 3);
+            double em1 = Math.Round(em / 23, 3);
+            double er1 = Math.Round(er / 6.5, 3);
+            double critdmg1 = Math.Round(critdmg / 7.8, 3);
+            double proccd = critdmg * 2.13;
+            double critrate1 = Math.Round(critrate / 3.9, 3);
 
             if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 > 9)
             {
@@ -80,15 +81,15 @@ namespace StatCounter
                 mistake = true;
             }
 
-            if (atk > 29)
-            {  
+            if (atk > 34.8)
+            {
                 if (atk <= 45)
-                { 
+                {
                     MessageBox.Show("Куда тебе столько силы атаки?");
                     mistake = true;
                 }
             }
-            else if (hp > 29)
+            else if (hp > 34.8)
             {
                 if (hp <= 45)
                 {
@@ -96,7 +97,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (def > 36.5)
+            else if (def > 43.8)
             {
                 if (def <= 55.8)
                 {
@@ -104,13 +105,10 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (critdmg > 39)
+            else if (proccd > 100)  //исправить надо 
             {
-                if (critdmg <= 59.4)
-                {
-                    MessageBox.Show("Вот это крит масса!");
-                    mistake = true;
-                }
+                MessageBox.Show("Вот это крит масса!");
+                mistake = true;
             }
             else if (critrate > 19.5)
             {
@@ -120,7 +118,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (er > 32.5)
+            else if (er > 39)
             {
                 if (er <= 49.5)
                 {
@@ -128,7 +126,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (em > 115)
+            else if (em > 138)
             {
                 if (em <= 180)
                 {
@@ -137,7 +135,7 @@ namespace StatCounter
                 }
             }
 
-            double sum = 4;
+            double sum = 9;
             if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 > 4)
             {
                 if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 < 9)
