@@ -47,44 +47,23 @@ namespace StatCounter
                 comboBox_mainstat.Text = "Сила атаки - 311";
             }
 
-            textBox_atk.Text = textBox_atk.Text.Replace(".", ",");
-            textBox_hp.Text = textBox_hp.Text.Replace(".", ",");
-            textBox_def.Text = textBox_def.Text.Replace(".", ",");
-            textBox_critdmg.Text = textBox_critdmg.Text.Replace(".", ",");
-            textBox_critrate.Text = textBox_critrate.Text.Replace(".", ",");
-            textBox_er.Text = textBox_er.Text.Replace(".", ",");
-            textBox_em.Text = textBox_em.Text.Replace(".", ",");
-
-            if (textBox_atk.Text == "")
-                textBox_atk.Text = "0";
-            if (textBox_hp.Text == "")
-                textBox_hp.Text = "0";
-            if (textBox_def.Text == "")
-                textBox_def.Text = "0";
-            if (textBox_critdmg.Text == "")
-                textBox_critdmg.Text = "0";
-            if (textBox_critrate.Text == "")
-                textBox_critrate.Text = "0";
-            if (textBox_er.Text == "")
-                textBox_er.Text = "0";
-            if (textBox_em.Text == "")
-                textBox_em.Text = "0";
-
-            try
+            TextBox[] textboxes = new TextBox[] { textBox_atk, textBox_hp, textBox_def, textBox_critdmg, textBox_critrate, textBox_er, textBox_em };
+            double[] stats = new double[] { atk, hp, def, critdmg, critrate, er, em };
+            for (int i = 0; i < 7; i++)
             {
-                atk = Convert.ToDouble(textBox_atk.Text);
-                hp = Convert.ToDouble(textBox_hp.Text);
-                def = Convert.ToDouble(textBox_def.Text);
-                critdmg = Convert.ToDouble(textBox_critdmg.Text);
-                critrate = Convert.ToDouble(textBox_critrate.Text);
-                er = Convert.ToDouble(textBox_er.Text);
-                em = Convert.ToDouble(textBox_em.Text);
-            }
+                textboxes[i].Text = textboxes[i].Text.Replace(".", ",");
+                if (textboxes[i].Text == "")
+                    textboxes[i].Text = "0";
+                try
+                {
+                    stats[i] = Convert.ToDouble(textboxes[i].Text);
+                }
 
-            catch (Exception)
-            {
-                MessageBox.Show("Неверный формат ввода!");
-                mistake = true;
+                catch (Exception)
+                {
+                    MessageBox.Show("Неверный формат ввода!");
+                    mistake = true;
+                }
             }
 
             double atk1 = Math.Round(atk / 5, 3); //5
@@ -897,194 +876,25 @@ namespace StatCounter
                                                                       new string[] { "HP %" }, //Кубане
                                                                       new string[] { "HP %" } }); //Шапке
 
-                int i = 0;
-                if (textBox_fnd.Text == "Ху Тао")
-                { WriteInTable(HuTao, a, HuTao.Name, i); i++; }
-                if (textBox_fnd.Text == "Диона")
-                { WriteInTable(Diona, a, Diona.Name, i); i++; }
-                if (textBox_fnd.Text == "Дилюк")
-                { WriteInTable(Diluc, a, Diluc.Name, i); i++; }
-                if (textBox_fnd.Text == "Райден")
-                { WriteInTable(Raiden, a, Raiden.Name, i); i++; }
-                if (textBox_fnd.Text == "Чжун Ли")
-                { WriteInTable(Zhongli, a, Zhongli.Name, i); i++; }
-                if (textBox_fnd.Text == "Яэ Мико")
-                { WriteInTable(YaeMiko, a, YaeMiko.Name, i); i++; }
-                if (textBox_fnd.Text == "Эола")
-                { WriteInTable(Eula, a, Eula.Name, i); i++; }
-                if (textBox_fnd.Text == "Еимия")
-                { WriteInTable(Yoimiya, a, Yoimiya.Name, i); i++; }
-                if (textBox_fnd.Text == "Аль-Хайтам")
-                { WriteInTable(Alibek, a, Alibek.Name, i); i++; }
-                if (textBox_fnd.Text == "Альбедо")
-                { WriteInTable(Albedo, a, Albedo.Name, i); i++; }
-                if (textBox_fnd.Text == "Аяка")
-                { WriteInTable(Ayaka, a, Ayaka.Name, i); i++; }
-                if (textBox_fnd.Text == "Аято")
-                { WriteInTable(Ayato, a, Ayato.Name, i); i++; }
-                if (textBox_fnd.Text == "Барбара")
-                { WriteInTable(Barbara, a, Barbara.Name, i); i++; }
-                if (textBox_fnd.Text == "Беннет")
-                { WriteInTable(Bennet, a, Bennet.Name, i); i++; }
-                if (textBox_fnd.Text == "Бэй Доу")
-                { WriteInTable(Beidou, a, Beidou.Name, i); i++; }
-                if (textBox_fnd.Text == "Розария")
-                { WriteInTable(Rosaria, a, Rosaria.Name, i); i++; }
-                if (textBox_fnd.Text == "Син Цю")
-                { WriteInTable(Xingqiu, a, Xingqiu.Name, i); i++; }
-                if (textBox_fnd.Text == "Е Лань")
-                { WriteInTable(Yelan, a, Yelan.Name, i); i++; }
-                if (textBox_fnd.Text == "Чун Юнь")
-                { WriteInTable(Chongyun, a, Chongyun.Name, i); i++; }
-                if (textBox_fnd.Text == "Шень Хэ")
-                { WriteInTable(Shenhe, a, Shenhe.Name, i); i++; }
-                if (textBox_fnd.Text == "Ци ци")
-                { WriteInTable(Qiqi, a, Qiqi.Name, i); i++; }
-                if (textBox_fnd.Text == "Кэйа")
-                { WriteInTable(Kaeya, a, Kaeya.Name, i); i++; }
-                if (textBox_fnd.Text == "Лайла")
-                { WriteInTable(Layla, a, Layla.Name, i); i++; }
-                if (textBox_fnd.Text == "Гань Юй")
-                { WriteInTable(Ganyu, a, Ganyu.Name, i); i++; }
-                if (textBox_fnd.Text == "Кокоми")
-                { WriteInTable(Kokomi, a, Kokomi.Name, i); i++; }
-                if (textBox_fnd.Text == "Горо")
-                { WriteInTable(Gorou, a, Gorou.Name, i); i++; }
-                if (textBox_fnd.Text == "Итто")
-                { WriteInTable(Itto, a, Itto.Name, i); i++; }
-                if (textBox_fnd.Text == "Ноэлль")
-                { WriteInTable(Noelle, a, Noelle.Name, i); i++; }
-                if (textBox_fnd.Text == "Нин Гуан")
-                { WriteInTable(Ningguang, a, Ningguang.Name, i); i++; }
-                if (textBox_fnd.Text == "Сахароза")
-                { WriteInTable(Sucrose, a, Sucrose.Name, i); i++; }
-                if (textBox_fnd.Text == "Кадзуха")
-                { WriteInTable(Kadzuha, a, Kadzuha.Name, i); i++; }
-                if (textBox_fnd.Text == "Джинн")
-                { WriteInTable(Jean, a, Jean.Name, i); i++; }
-                if (textBox_fnd.Text == "Венти")
-                { WriteInTable(Venti, a, Venti.Name, i); i++; }
-                if (textBox_fnd.Text == "Сяо")
-                { WriteInTable(Xiao, a, Xiao.Name, i); i++; }
-                if (textBox_fnd.Text == "Странник")
-                { WriteInTable(Stranger, a, Stranger.Name, i); i++; }
-                if (textBox_fnd.Text == "Хэйдзо")
-                { WriteInTable(Heidzou, a, Heidzou.Name, i); i++; }
-                if (textBox_fnd.Text == "Фарузан")
-                { WriteInTable(Faruzan, a, Faruzan.Name, i); i++; }
-                if (textBox_fnd.Text == "Тарталья")
-                { WriteInTable(Tartaglia, a, Tartaglia.Name, i); i++; }
-                if (textBox_fnd.Text == "Мона")
-                { WriteInTable(Mona, a, Mona.Name, i); i++; }
-                if (textBox_fnd.Text == "Нилу")
-                { WriteInTable(Nilou, a, Nilou.Name, i); i++; }
-                if (textBox_fnd.Text == "Кандакия")
-                { WriteInTable(Candace, a, Candace.Name, i); i++; }
-                if (textBox_fnd.Text == "Янь Фей")
-                { WriteInTable(Yanfei, a, Yanfei.Name, i); i++; }
-                if (textBox_fnd.Text == "Кли")
-                { WriteInTable(Klee, a, Klee.Name, i); i++; }
-                if (textBox_fnd.Text == "Сян Лин")
-                { WriteInTable(Xiangling, a, Xiangling.Name, i); i++; }
-                if (textBox_fnd.Text == "Эмбер")
-                { WriteInTable(Amber, a, Amber.Name, i); i++; }
-                if (textBox_fnd.Text == "Синь Янь")
-                { WriteInTable(Xinyan, a, Xinyan.Name, i); i++; }
-                if (textBox_fnd.Text == "Тома")
-                { WriteInTable(Thoma, a, Thoma.Name, i); i++; }
-                if (textBox_fnd.Text == "Юнь Дзинь")
-                { WriteInTable(Yunjin, a, Yunjin.Name, i); i++; }
-                if (textBox_fnd.Text == "Коллеи")
-                { WriteInTable(Kollei, a, Kollei.Name, i); i++; }
-                if (textBox_fnd.Text == "Нахида")
-                { WriteInTable(Nahida, a, Nahida.Name, i); i++; }
-                if (textBox_fnd.Text == "Тигнари")
-                { WriteInTable(Tignari, a, Tignari.Name, i); i++; }
-                if (textBox_fnd.Text == "Яо Яо")
-                { WriteInTable(YaoYao, a, YaoYao.Name, i); i++; }
-                if (textBox_fnd.Text == "Рэйзор")
-                { WriteInTable(Razor, a, Razor.Name, i); i++; }
-                if (textBox_fnd.Text == "Фишль")
-                { WriteInTable(Fischl, a, Fischl.Name, i); i++; }
-                if (textBox_fnd.Text == "Кэ Цин")
-                { WriteInTable(Keqing, a, Keqing.Name, i); i++; }
-                if (textBox_fnd.Text == "Лиза")
-                { WriteInTable(Lisa, a, Lisa.Name, i); i++; }
-                if (textBox_fnd.Text == "Дори")
-                { WriteInTable(Dori, a, Dori.Name, i); i++; }
-                if (textBox_fnd.Text == "Синобу")
-                { WriteInTable(Sinobu, a, Sinobu.Name, i); i++; }
-                if (textBox_fnd.Text == "Сара")
-                { WriteInTable(Sara, a, Sara.Name, i); i++; }
-                if (textBox_fnd.Text == "Сайно")
-                { WriteInTable(Cyno, a, Cyno.Name, i); i++; }
-                if (textBox_fnd.Text == "Дэхья")
-                { WriteInTable(Dehya, a, Dehya.Name, i); i++; }
-                if (textBox_fnd.Text == "Мика")
-                { WriteInTable(Mika, a, Mika.Name, i); i++; }
+                Character[] characters = new Character[] { HuTao, Diona, Diluc, Raiden, Zhongli, YaeMiko, Eula, Yoimiya, Alibek, Albedo, Ayaka, Ayato, Barbara, Bennet, Beidou, Rosaria,
+                Xingqiu, Yelan, Chongyun, Shenhe, Qiqi, Kaeya, Layla, Ganyu, Kokomi, Gorou, Itto, Noelle, Ningguang, Sucrose, Kadzuha, Jean, Venti, Xiao, Stranger, Heidzou, Faruzan, Tartaglia,
+                Mona, Nilou, Candace, Yanfei, Klee, Xiangling, Amber, Xinyan, Thoma, Yunjin, Kollei, Nahida, Tignari, YaoYao, Razor, Fischl, Keqing, Lisa, Dori, Sinobu, Sara, Cyno, Dehya, Mika };
 
-                WriteInTable(Diona, a, Diona.Name, i); i++;
-                WriteInTable(HuTao, a, HuTao.Name, i); i++;
-                WriteInTable(Diluc, a, Diluc.Name, i); i++;
-                WriteInTable(Raiden, a, Raiden.Name, i); i++;
-                WriteInTable(Zhongli, a, Zhongli.Name, i); i++;
-                WriteInTable(YaeMiko, a, YaeMiko.Name, i); i++;
-                WriteInTable(Eula, a, Eula.Name, i); i++;
-                WriteInTable(Yoimiya, a, Yoimiya.Name, i); i++;
-                WriteInTable(Alibek, a, Alibek.Name, i); i++;
-                WriteInTable(Albedo, a, Albedo.Name, i); i++;
-                WriteInTable(Ayaka, a, Ayaka.Name, i); i++;
-                WriteInTable(Ayato, a, Ayato.Name, i); i++;
-                WriteInTable(Barbara, a, Barbara.Name, i); i++;
-                WriteInTable(Bennet, a, Bennet.Name, i); i++;
-                WriteInTable(Beidou, a, Beidou.Name, i); i++;
-                WriteInTable(Rosaria, a, Rosaria.Name, i); i++;
-                WriteInTable(Xingqiu, a, Xingqiu.Name, i); i++;
-                WriteInTable(Yelan, a, Yelan.Name, i); i++;
-                WriteInTable(Chongyun, a, Chongyun.Name, i); i++;
-                WriteInTable(Shenhe, a, Shenhe.Name, i); i++;
-                WriteInTable(Qiqi, a, Qiqi.Name, i); i++;
-                WriteInTable(Kaeya, a, Kaeya.Name, i); i++;
-                WriteInTable(Layla, a, Layla.Name, i); i++;
-                WriteInTable(Ganyu, a, Ganyu.Name, i); i++;
-                WriteInTable(Kokomi, a, Kokomi.Name, i); i++;
-                WriteInTable(Gorou, a, Gorou.Name, i); i++;
-                WriteInTable(Itto, a, Itto.Name, i); i++;
-                WriteInTable(Noelle, a, Noelle.Name, i); i++;
-                WriteInTable(Ningguang, a, Ningguang.Name, i); i++;
-                WriteInTable(Sucrose, a, Sucrose.Name, i); i++;
-                WriteInTable(Kadzuha, a, Kadzuha.Name, i); i++;
-                WriteInTable(Jean, a, Jean.Name, i); i++;
-                WriteInTable(Venti, a, Venti.Name, i); i++;
-                WriteInTable(Xiao, a, Xiao.Name, i); i++;
-                WriteInTable(Stranger, a, Stranger.Name, i); i++;
-                WriteInTable(Heidzou, a, Heidzou.Name, i); i++;
-                WriteInTable(Faruzan, a, Faruzan.Name, i); i++;
-                WriteInTable(Tartaglia, a, Tartaglia.Name, i); i++;
-                WriteInTable(Mona, a, Mona.Name, i); i++;
-                WriteInTable(Nilou, a, Nilou.Name, i); i++;
-                WriteInTable(Candace, a, Candace.Name, i); i++;
-                WriteInTable(Yanfei, a, Yanfei.Name, i); i++;
-                WriteInTable(Klee, a, Klee.Name, i); i++;
-                WriteInTable(Xiangling, a, Xiangling.Name, i); i++;
-                WriteInTable(Amber, a, Amber.Name, i); i++;
-                WriteInTable(Xinyan, a, Xinyan.Name, i); i++;
-                WriteInTable(Thoma, a, Thoma.Name, i); i++;
-                WriteInTable(Yunjin, a, Yunjin.Name, i); i++;
-                WriteInTable(Kollei, a, Kollei.Name, i); i++;
-                WriteInTable(Nahida, a, Nahida.Name, i); i++;
-                WriteInTable(Tignari, a, Tignari.Name, i); i++;
-                WriteInTable(YaoYao, a, YaoYao.Name, i); i++;
-                WriteInTable(Razor, a, Razor.Name, i); i++;
-                WriteInTable(Fischl, a, Fischl.Name, i); i++;
-                WriteInTable(Keqing, a, Keqing.Name, i); i++;
-                WriteInTable(Lisa, a, Lisa.Name, i); i++;
-                WriteInTable(Dori, a, Dori.Name, i); i++;
-                WriteInTable(Sinobu, a, Sinobu.Name, i); i++;
-                WriteInTable(Sara, a, Sara.Name, i); i++;
-                WriteInTable(Cyno, a, Cyno.Name, i); i++;
-                WriteInTable(Dehya, a, Dehya.Name, i); i++;
-                WriteInTable(Mika, a, Mika.Name, i); i++;
+                int i = 0;
+                bool findMistake = true;
+                foreach (Character ch in characters)
+                {
+                    if (textBox_fnd.Text == ch.Name)
+                    {
+                        WriteInTable(ch, a, ch.Name, 0);
+                        findMistake = false;
+                    }    
+                }
+                if (findMistake)
+                    foreach (Character ch in characters)
+                    {
+                        WriteInTable(ch, a, ch.Name, i); i++;
+                    }
             }
         }
 
