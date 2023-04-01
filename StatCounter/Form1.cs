@@ -9,15 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
-using System.Text.RegularExpressions;
-using System.Diagnostics.Eventing.Reader;
-using System.Security.Cryptography;
 
 namespace StatCounter
 {
     public partial class Form1 : Form
     {
-
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +25,6 @@ namespace StatCounter
             dataGridView1.Columns[2].HeaderText = "          Сет";
             dataGridView1.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             dataGridView1.DefaultCellStyle.BackColor = System.Drawing.Color.Black; 
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -42,7 +37,6 @@ namespace StatCounter
             double er = 0;
             double em = 0;
             bool mistake = false;
-
 
             if(comboBox_piece.Text == "Цветок")
             {
@@ -61,7 +55,6 @@ namespace StatCounter
             textBox_er.Text = textBox_er.Text.Replace(".", ",");
             textBox_em.Text = textBox_em.Text.Replace(".", ",");
 
-
             if (textBox_atk.Text == "")
                 textBox_atk.Text = "0";
             if (textBox_hp.Text == "")
@@ -76,7 +69,6 @@ namespace StatCounter
                 textBox_er.Text = "0";
             if (textBox_em.Text == "")
                 textBox_em.Text = "0";
-
 
             try
             {
@@ -214,35 +206,6 @@ namespace StatCounter
                 MessageBox.Show("Неверный формат ввода!");
                 mistake = true;
             }
-
-            /*  if (atk > 0)
-              { 
-                  if(hp > 0)
-                  {
-                      if (def > 0)
-                      {
-                          if (critdmg > 0)
-                          {
-                              if (critrate > 0)
-                              {
-                                  MessageBox.Show("Чет артефакт неправильный какой то");
-                                  mistake = true;
-
-                              }
-                              else if (er > 0)
-                              {
-                                  MessageBox.Show("Чет артефакт неправильный какой то");      это говно не работает
-                                  mistake = true;
-                              }
-                              else if (em > 0)
-                              {
-                                  MessageBox.Show("Чет артефакт неправильный какой то");
-                                  mistake = true;
-                              }
-                          }                       
-                      }
-                  }
-              }  */
 
             if (mistake == false)
             {
@@ -934,7 +897,6 @@ namespace StatCounter
                                                                       new string[] { "HP %" }, //Кубане
                                                                       new string[] { "HP %" } }); //Шапке
 
-
                 int i = 0;
                 if (textBox_fnd.Text == "Ху Тао")
                 { WriteInTable(HuTao, a, HuTao.Name, i); i++; }
@@ -1061,8 +1023,6 @@ namespace StatCounter
                 if (textBox_fnd.Text == "Мика")
                 { WriteInTable(Mika, a, Mika.Name, i); i++; }
 
-
-                
                 WriteInTable(Diona, a, Diona.Name, i); i++;
                 WriteInTable(HuTao, a, HuTao.Name, i); i++;
                 WriteInTable(Diluc, a, Diluc.Name, i); i++;
@@ -1127,125 +1087,122 @@ namespace StatCounter
                 WriteInTable(Mika, a, Mika.Name, i); i++;
             }
         }
-        
-                //Микрофункция возвращающая результат чекинга арта на предмет его профпригодности для конкретного перса
-                public string Stat_Function(Character c, Artefact a)
-                {
-                    return c.Checker(a);
-                }
-                //Функция возвращающая инфу о релевантности артсета
-                public string Set_Function(Character c, Artefact a)
-                {
-                    bool error = true;
 
-                    if (comboBox_set.Text == "")
-                        return "Введи сет";
+        //Микрофункция возвращающая результат чекинга арта на предмет его профпригодности для конкретного перса
+        public string Stat_Function(Character c, Artefact a)
+        {
+            return c.Checker(a);
+        }
+        //Функция возвращающая инфу о релевантности артсета
+        public string Set_Function(Character c, Artefact a)
+        {
+            bool error = true;
 
-                    if (a.Piece == "Часы")
-                        foreach (string stat1 in c.MainStats[0])
-                            if (stat1 == a.MainStat)
-                                error = false;
-                    if (a.Piece == "Кубок")
-                        foreach (string stat2 in c.MainStats[1])
-                            if (stat2 == a.MainStat)
-                                error = false;
-                    if (a.Piece == "Шапка")
-                        foreach (string stat3 in c.MainStats[2])
-                            if (stat3 == a.MainStat)
-                                error = false;
-                    if (a.Piece == "Цветок" || a.Piece == "Перо")
+            if (comboBox_set.Text == "")
+                return "Введи сет";
+
+            if (a.Piece == "Часы")
+                foreach (string stat1 in c.MainStats[0])
+                    if (stat1 == a.MainStat)
                         error = false;
+            if (a.Piece == "Кубок")
+                foreach (string stat2 in c.MainStats[1])
+                    if (stat2 == a.MainStat)
+                        error = false;
+            if (a.Piece == "Шапка")
+                foreach (string stat3 in c.MainStats[2])
+                    if (stat3 == a.MainStat)
+                        error = false;
+            if (a.Piece == "Цветок" || a.Piece == "Перо")
+                error = false;
 
-                    if (error == true)
-                        return "-";
+            if (error == true)
+                return "-";
 
-                    foreach (string s in c.MainSets)
-                    {
-                        if (s == comboBox_set.Text)
-                        {
-                            return "Сетник";
-                        }
-                    }
-                    foreach (string s in c.AltSets)
-                    {
-                        if (s == comboBox_set.Text)
-                        {
-                            return "Альтернатива";
-                        }
-                    }
-
-                    foreach (string s in c.SubSets)
-                    {
-                        if (s == comboBox_set.Text)
-                        {
-                            return "Солянка";
-                        }
-                    }
-
-                    return "Оффсетник";
-                }
-
-                //Метод для покраски стата
-                public Color ColorizeStat(string s)
+            foreach (string s in c.MainSets)
+            {
+                if (s == comboBox_set.Text)
                 {
-                    if (s == "Идеально")
-                        return Color.GreenYellow;
-                    else if (s == "Отлично")
-                        return Color.Yellow;
-                    else if (s == "Хорошо")
-                        return Color.Orange;
-                    else if (s == "-")
-                        return Color.White;
-                    else
-                        return Color.Black;
+                    return "Сетник";
                 }
-
-                //Метод для покраски сета
-                public Color ColorizeSet(string s)
+            }
+            foreach (string s in c.AltSets)
+            {
+                if (s == comboBox_set.Text)
                 {
-                    if (s == "Сетник")
-                        return Color.GreenYellow;
-                    else if (s == "Альтернатива")
-                        return Color.LightBlue;
-                    else if (s == "Солянка")
-                        return Color.Orange;
-                    else if (s == "Оффсетник")
-                        return Color.DeepPink;
-                    else if (s == "-")
-                        return Color.White;
-                    else
-                        return Color.Black;
+                    return "Альтернатива";
                 }
+            }
 
-                public void WriteInTable(Character c, Artefact a, string name, int i)
+            foreach (string s in c.SubSets)
+            {
+                if (s == comboBox_set.Text)
                 {
-                    string stat = Stat_Function(c, a);
-                    string set = Set_Function(c, a);
-                    Color aa = ColorizeStat(stat);
-                    Color bb = ColorizeSet(set);
-                    dataGridView1.Rows[i].Cells[0].Value = name;
-                    dataGridView1.Rows[i].Cells[1].Value = stat;
-                    dataGridView1.Rows[i].Cells[1].Style.ForeColor = aa;
-                    dataGridView1.Rows[i].Cells[2].Value = set;
-                    dataGridView1.Rows[i].Cells[2].Style.ForeColor = bb;
+                    return "Солянка";
                 }
+            }
 
-                private void button2_Click(object sender, EventArgs e)
-                {
-                    textBox_atk.Text = "";
-                    textBox_fnd.Text = "";
-                    textBox_hp.Text = "";
-                    textBox_def.Text = "";
-                    textBox_critdmg.Text = "";
-                    textBox_critrate.Text = "";
-                    textBox_er.Text = "";
-                    textBox_em.Text = "";
-                    comboBox_set.Text = "";
-                    comboBox_piece.Text = "";
-                    comboBox_mainstat.Text = "";
-                }   
-                
-                           
+            return "Оффсетник";
+        }
+
+        //Метод для покраски стата
+        public Color ColorizeStat(string s)
+        {
+            if (s == "Идеально")
+                return Color.GreenYellow;
+            else if (s == "Отлично")
+                return Color.Yellow;
+            else if (s == "Хорошо")
+                return Color.Orange;
+            else if (s == "-")
+                return Color.White;
+            else
+                return Color.Black;
+        }
+
+        //Метод для покраски сета
+        public Color ColorizeSet(string s)
+        {
+            if (s == "Сетник")
+                return Color.GreenYellow;
+            else if (s == "Альтернатива")
+                return Color.LightBlue;
+            else if (s == "Солянка")
+                return Color.Orange;
+            else if (s == "Оффсетник")
+                return Color.DeepPink;
+            else if (s == "-")
+                return Color.White;
+            else
+                return Color.Black;
+        }
+
+        public void WriteInTable(Character c, Artefact a, string name, int i)
+        {
+            string stat = Stat_Function(c, a);
+            string set = Set_Function(c, a);
+            Color aa = ColorizeStat(stat);
+            Color bb = ColorizeSet(set);
+            dataGridView1.Rows[i].Cells[0].Value = name;
+            dataGridView1.Rows[i].Cells[1].Value = stat;
+            dataGridView1.Rows[i].Cells[1].Style.ForeColor = aa;
+            dataGridView1.Rows[i].Cells[2].Value = set;
+            dataGridView1.Rows[i].Cells[2].Style.ForeColor = bb;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox_atk.Text = "";
+            textBox_fnd.Text = "";
+            textBox_hp.Text = "";
+            textBox_def.Text = "";
+            textBox_critdmg.Text = "";
+            textBox_critrate.Text = "";
+            textBox_er.Text = "";
+            textBox_em.Text = "";
+            comboBox_set.Text = "";
+            comboBox_piece.Text = "";
+            comboBox_mainstat.Text = "";
+        }             
     } 
-    
 }
