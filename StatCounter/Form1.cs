@@ -95,13 +95,20 @@ namespace StatCounter
                 mistake = true;
             }
 
-            double atk1 = Math.Round(atk / 5, 3); //5
-            double def1 = Math.Round(def / 6.2, 3); //6,2
-            double hp1 = Math.Round(hp / 5, 3); //5
-            double em1 = Math.Round(em / 20, 3); //20
-            double er1 = Math.Round(er / 5.5, 3); //5,5
-            double critdmg1 = Math.Round(critdmg / 6.6, 3); //6,6
-            double critrate1 = Math.Round(critrate / 3.3, 3); //3,3
+            double atk1 = Math.Round(atk / 5.8, 3); //5
+            double procatk = atk * 2.87;
+            double def1 = Math.Round(def / 6.5, 3); //6,2
+            double procdef = def * 2.56;
+            double hp1 = Math.Round(hp / 5.8, 3); //5
+            double prochp = atk * 2.87;
+            double em1 = Math.Round(em / 23, 3); //20
+            double procem = em * 0.72;
+            double er1 = Math.Round(er / 6.8, 3); //5,5
+            double procer = er * 2.45;
+            double critdmg1 = Math.Round(critdmg / 7.8, 3); //6,6
+            double proccd = critdmg * 2.13;
+            double critrate1 = Math.Round(critrate / 3.9, 3); //3,3
+            double proccr = critrate * 4.27;
 
             if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 > 9)
             {
@@ -109,7 +116,7 @@ namespace StatCounter
                 mistake = true;
             }
 
-            if (atk > 29)
+            if (atk > 34.8)
             {  
                 if (atk <= 45)
                 { 
@@ -117,7 +124,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (hp > 29)
+            else if (hp > 34.8)
             {
                 if (hp <= 45)
                 {
@@ -125,7 +132,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (def > 36.5)
+            else if (def > 43.8)
             {
                 if (def <= 55.8)
                 {
@@ -133,13 +140,10 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (critdmg > 39)
-            {
-                if (critdmg <= 59.4)
-                {
-                    MessageBox.Show("Вот это крит масса!");
-                    mistake = true;
-                }
+            else if (proccd > 100)  //исправить надо
+            {  
+                MessageBox.Show("Вот это крит масса!");
+                mistake = true;               
             }
             else if (critrate > 19.5)
             {
@@ -149,7 +153,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (er > 32.5)
+            else if (er > 39)
             {
                 if (er <= 49.5)
                 {
@@ -157,7 +161,7 @@ namespace StatCounter
                     mistake = true;
                 }
             }
-            else if (em > 115)
+            else if (em > 138)
             {
                 if (em <= 180)
                 {
@@ -166,50 +170,63 @@ namespace StatCounter
                 }
             }
 
-            double sum = 4;
+            double sum = 9;
+            double sum1 = 4;
             if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 > 4)
             {
                 if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 < 9)
                 {
-                    if (atk1 >= 1)
+                    if (atk1 >= 1) 
                     {
                         double num = atk1;
                         sum -= num;
+                        sum1 -= num;
                     }
                     if (hp1 >= 1)
                     {
                         double num1 = hp1;
                         sum -= num1;
+                        sum1 -= num1;
                     }
                     if (def1 >= 1)
                     {
                         double num2 = def1;
                         sum -= num2;
+                        sum1 -= num2;
                     }
                     if (critdmg1 >= 1)
                     {
-                        double num3 = critdmg1;
+                        double num3 = critdmg1;   //траи сделать чтобы при 5 статах выдавалась ошибОЧКА
                         sum -= num3;
+                        sum1 -= num3;
                     }
                     if (critrate1 >= 1)
                     {
                         double num4 = critrate1;
                         sum -= num4;
+                        sum1 -= num4;
                     }
                     if (er1 >= 1)
                     {
                         double num5 = er1;
                         sum -= num5;
+                        sum1 -= num5;
                     }
                     if (em1 >= 1)
                     {
                         double num6 = em1;
                         sum -= num6;
-                    }
+                        sum1 -= num6;
+                    }                                          
                 }
             }                       
 
             if (sum < 0)
+            {
+                MessageBox.Show("Неверный формат ввода!");
+                mistake = true;
+            }
+            else if (sum1 < 0)
             {
                 MessageBox.Show("Неверный формат ввода!");
                 mistake = true;
