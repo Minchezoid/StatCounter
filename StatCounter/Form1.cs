@@ -95,140 +95,96 @@ namespace StatCounter
                 mistake = true;
             }
 
-            double atk1 = Math.Round(atk / 5.8, 3); //5
-            double procatk = atk * 2.87;
-            double def1 = Math.Round(def / 6.5, 3); //6,2
-            double procdef = def * 2.56;
-            double hp1 = Math.Round(hp / 5.8, 3); //5
-            double prochp = atk * 2.87;
-            double em1 = Math.Round(em / 23, 3); //20
-            double procem = em * 0.72;
-            double er1 = Math.Round(er / 6.8, 3); //5,5
-            double procer = er * 2.45;
-            double critdmg1 = Math.Round(critdmg / 7.8, 3); //6,6
-            double proccd = critdmg * 2.13;
-            double critrate1 = Math.Round(critrate / 3.9, 3); //3,3
-            double proccr = critrate * 4.27;
-
-            if (atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1 > 9)
-            {
-                MessageBox.Show("Чет артефакт неправильный какой то");
-                mistake = true;
-            }
-
-            if (atk > 34.8)
-            {  
-                if (atk <= 45)
-                { 
-                    MessageBox.Show("Куда тебе столько силы атаки?");
-                    mistake = true;
-                }
-            }
-            else if (hp > 34.8)
-            {
-                if (hp <= 45)
-                {
-                    MessageBox.Show("Найс деда собрал!");
-                    mistake = true;
-                }
-            }
-            else if (def > 43.8)
-            {
-                if (def <= 55.8)
-                {
-                    MessageBox.Show("Нифига праздник для Итто!");
-                    mistake = true;
-                }
-            }
-            else if (proccd > 100)  //исправить надо
-            {  
-                MessageBox.Show("Вот это крит масса!");
-                mistake = true;               
-            }
-            else if (critrate > 19.5)
-            {
-                if (critrate <= 29.7)
-                {
-                    MessageBox.Show("Вот это крит масса!");
-                    mistake = true;
-                }
-            }
-            else if (er > 39)
-            {
-                if (er <= 49.5)
-                {
-                    MessageBox.Show("Сборка райден происходит?");
-                    mistake = true;
-                }
-            }
-            else if (em > 138)
-            {
-                if (em <= 180)
-                {
-                    MessageBox.Show("Неплохой казах получился бы!");
-                    mistake = true;
-                }
-            }
-
-            atk1 = Math.Round(atk / 5); //5
-            def1 = Math.Round(def / 6.2); //6,2
-            hp1 = Math.Round(hp / 5); //5
-            em1 = Math.Round(em / 19); //20
-            er1 = Math.Round(er / 5.5); //5,5
-            critdmg1 = Math.Round(critdmg / 6.6); //6,6
-            critrate1 = Math.Round(critrate / 3.3); //3,3
+            double atk1 = Math.Round(atk / 5); //5
+            double def1 = Math.Round(def / 6.2); //6,2
+            double hp1 = Math.Round(hp / 5); //5
+            double em1 = Math.Round(em / 19); //20
+            double er1 = Math.Round(er / 5.5); //5,5
+            double critdmg1 = Math.Round(critdmg / 6.6); //6,6
+            double critrate1 = Math.Round(critrate / 3.3); //3,3
 
             double sum = 9;
             double sum1 = 4;
             double rolls = atk1 + def1 + hp1 + em1 + er1 + critdmg1 + critrate1;
-            if (rolls > 4)
-            {
-                if (rolls < 9)
+            if (rolls >= 4)
+            {               
+                if (atk1 > 0) 
                 {
-                        if (atk1 > 0) 
-                        {
-                            double num = atk1;
-                            sum -= num;
-                            sum1 -= 1;
-                        }
-                        if (hp1 > 0)
-                        {
-                            double num1 = hp1;
-                            sum -= num1;
-                            sum1 -= 1;
-                        }
-                        if (def1 > 0)
-                        {
-                            double num2 = def1;
-                            sum -= num2;
-                            sum1 -= 1;
-                        }
-                        if (critdmg1 > 0)
-                        {
-                            double num3 = critdmg1;   //траи сделать чтобы при 5 статах выдавалась ошибОЧКА
-                            sum -= num3;
-                            sum1 -= 1;
-                        }
-                        if (critrate1 > 0)
-                        {
-                            double num4 = critrate1;
-                            sum -= num4;
-                            sum1 -= 1;
-                        }
-                        if (er1 > 0)
-                        {
-                            double num5 = er1;
-                            sum -= num5;
-                            sum1 -= 1;
-                        }
-                        if (em1 > 0)
-                        {
-                            double num6 = em1;
-                            sum -= num6;
-                            sum1 -= 1;
-                        }                                          
+                    double num = atk1;
+                    sum -= num;
+                    sum1 -= 1;
+                    if (atk > 34.8)
+                    {
+                        sum = -1;
+                    }
                 }
-            }                       
+                if (hp1 > 0)
+                {
+                    double num1 = hp1;
+                    sum -= num1;
+                    sum1 -= 1;
+                    if (hp > 34.8)
+                    {
+                        sum = -1;
+                    }
+                }
+                if (def1 > 0)
+                {
+                    double num2 = def1;
+                    sum -= num2;
+                    sum1 -= 1;
+                    if (def > 43.8)
+                    {
+                        sum = -1;
+                    }
+                }
+                if (critdmg1 > 0)
+                {
+                    double num3 = critdmg1;   
+                    sum -= num3;
+                    sum1 -= 1;
+                    if (critdmg > 46.8)
+                    {
+                        sum = -1;
+                    }
+                }
+                if (critrate1 > 0)
+                {
+                    double num4 = critrate1;
+                    sum -= num4;
+                    sum1 -= 1;
+                    if (critrate > 23.4)
+                    {
+                        sum = -1;
+                    }
+                }
+                if (er1 > 0)
+                {
+                    double num5 = er1;
+                    sum -= num5;
+                    sum1 -= 1;
+                    if (er > 39)
+                    {
+                        sum = -1;
+                    }
+                }
+                if (em1 > 0)
+                {
+                    double num6 = em1;
+                    sum -= num6;
+                    sum1 -= 1;
+                    if (em > 138)
+                    {
+                        sum = -1;
+                    }
+                }                                          
+                
+            }
+            else
+            {
+                MessageBox.Show("Неверный формат ввода!");
+                mistake = true;
+            }                     
 
             if (sum1 < 0)
             {                
@@ -239,41 +195,7 @@ namespace StatCounter
             {
                 MessageBox.Show("Неверный формат ввода!");
                 mistake = true;
-            }
-            if (rolls <= 0)
-            {
-                MessageBox.Show("Введи что нибудь!");
-                mistake = true;
-            }
-
-            /*  if (atk > 0)
-              { 
-                  if(hp > 0)
-                  {
-                      if (def > 0)
-                      {
-                          if (critdmg > 0)
-                          {
-                              if (critrate > 0)
-                              {
-                                  MessageBox.Show("Чет артефакт неправильный какой то");
-                                  mistake = true;
-
-                              }
-                              else if (er > 0)
-                              {
-                                  MessageBox.Show("Чет артефакт неправильный какой то");      это говно не работает
-                                  mistake = true;
-                              }
-                              else if (em > 0)
-                              {
-                                  MessageBox.Show("Чет артефакт неправильный какой то");
-                                  mistake = true;
-                              }
-                          }                       
-                      }
-                  }
-              }  */
+            }                       
 
             if (mistake == false)
             {
@@ -1274,9 +1196,7 @@ namespace StatCounter
                     comboBox_set.Text = "";
                     comboBox_piece.Text = "";
                     comboBox_mainstat.Text = "";
-                }   
-                
-                           
+                }                                             
     } 
     
 }
