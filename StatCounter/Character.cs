@@ -9,32 +9,36 @@ namespace StatCounter
 {
     public class Character
     {
-        public string[] MainSets { get; set; }
-        public string[] AltSets { get; set; }
-        public string[] SubSets { get; set; }
-        public string[] PerfectStats { get; set; }
-        public string[] GoodStats { get; set; }
-        public string[] OkStats { get; set; }
-        public string[][] MainStats { get; set; }
+        public List<string> MainSets { get; set; }
+        public List<string> AltSets { get; set; }
+        public List<string> SubSets { get; set; }
+        public List<string> PerfectStats { get; set; }
+        public List<string> GoodStats { get; set; }
+        public List<string> OkStats { get; set; }
+        //public string[][] MainStats { get; set; }
+        public List<string> ClockStats { get; set; }
+        public List<string> GobletStats { get; set; }
+        public List<string> CrownStats { get; set; }
 
-        public double first { get; set; }
-        public double second { get; set; }
-        public double third { get; set; }
+
+        public double First { get; set; }
+        public double Second { get; set; }
+        public double Third { get; set; }
 
         public string Name { get; set; }
 
-        public Character(string name, string[] mainSets, string[] altSets, string[] subSets, string[] perfectStats, string[] goodStats, string[] okStats, string[][] mainStats)
-        {
-            Name = name;
-            MainSets = mainSets;
-            AltSets = altSets;
-            SubSets = subSets;
-            PerfectStats = perfectStats;
-            GoodStats = goodStats;
-            OkStats = okStats;
-            MainStats = mainStats;
-        }
-        public string Checker(Artefact a)
+        //public Character(string name, List<string> mainSets, List<string> altSets, List<string> subSets, List<string> perfectStats, List<string> goodStats, List<string> okStats, string[][] mainStats)
+        //{
+        //    Name = name;
+        //    MainSets = mainSets;
+        //    AltSets = altSets;
+        //    SubSets = subSets;
+        //    PerfectStats = perfectStats;
+        //    GoodStats = goodStats;
+        //    OkStats = okStats;
+        //    MainStats = mainStats;
+        //}
+        public string Check(Artefact a)
         {
 
             bool mainstatus = false;
@@ -52,7 +56,7 @@ namespace StatCounter
 
             if (a.Piece == "Часы")
             {
-                foreach (string s in MainStats[0])
+                foreach (string s in ClockStats)
                 {
                     if (s == a.MainStat)
                     {
@@ -66,7 +70,7 @@ namespace StatCounter
             }    
             else if (a.Piece == "Кубок")
             {
-                foreach (string s in MainStats[1])
+                foreach (string s in GobletStats)
                 {
                     if (s == a.MainStat)
                     {
@@ -80,7 +84,7 @@ namespace StatCounter
             }
             else if (a.Piece == "Шапка")
             {
-                foreach (string s in MainStats[2])
+                foreach (string s in CrownStats)
                 {
                     if (s == a.MainStat)
                     {
@@ -96,98 +100,98 @@ namespace StatCounter
             foreach (string s in PerfectStats)
             {
                 if (s == "Крит. урон %")
-                    first += a.CritDmg;
+                    First += a.CritDmg;
                 else if (s == "Шанс крит. попадания %")
-                    first += a.CritRate;
+                    First += a.CritRate;
                 else if (s == "Сила атаки %")
-                    first += a.Atk;
+                    First += a.Atk;
                 else if (s == "HP %")
-                    first += a.Hp;
+                    First += a.Hp;
                 else if (s == "Защита %")
-                    first += a.Def;
+                    First += a.Def;
                 else if (s == "Восст. энергии %")
-                    first += a.Er;
+                    First += a.Er;
                 else if (s == "Мастерство стихий")
-                    first += a.Em;
+                    First += a.Em;
             }
 
             foreach (string s in GoodStats)
             {
                 if (s == "Крит. урон %")
-                    second += a.CritDmg;
+                    Second += a.CritDmg;
                 else if (s == "Шанс крит. попадания %")
-                    second += a.CritRate;
+                    Second += a.CritRate;
                 else if (s == "Сила атаки %")
-                    second += a.Atk;
+                    Second += a.Atk;
                 else if (s == "HP %")
-                    second += a.Hp;
+                    Second += a.Hp;
                 else if (s == "Защита %")
-                    second += a.Def;
+                    Second += a.Def;
                 else if (s == "Восст. энергии %")
-                    second += a.Er;
+                    Second += a.Er;
                 else if (s == "Мастерство стихий")
-                    second += a.Em;
+                    Second += a.Em;
             }
 
             foreach (string s in OkStats)
             {
                 if (s == "Крит. урон %")
-                    third += a.CritDmg;
+                    Third += a.CritDmg;
                 else if (s == "Шанс крит. попадания %")
-                    third += a.CritRate;
+                    Third += a.CritRate;
                 else if (s == "Сила атаки %")
-                    third += a.Atk;
+                    Third += a.Atk;
                 else if (s == "HP %")
-                    third += a.Hp;
+                    Third += a.Hp;
                 else if (s == "Защита %")
-                    third += a.Def;
+                    Third += a.Def;
                 else if (s == "Восст. энергии %")
-                    third += a.Er;
+                    Third += a.Er;
                 else if (s == "Мастерство стихий")
-                    third += a.Em;
+                    Third += a.Em;
             }
             //Третий по полезности стат переливаем во второй, деля его на 2
-            second += (third / 2);
+            Second += (Third / 2);
 
             //Считаем главные статы и добавляем чуточку во второй если у нас заминОЧКА
-            if (first - Math.Truncate(first) > 0.8)
-                first = Math.Truncate(first) + 1;
-            else if (first - Math.Truncate(first) > 0.4)
+            if (First - Math.Truncate(First) > 0.8)
+                First = Math.Truncate(First) + 1;
+            else if (First - Math.Truncate(First) > 0.4)
             {
-                first = Math.Truncate(first);
-                second += 1;
+                First = Math.Truncate(First);
+                Second += 1;
             }  
             else
             {
-                second += (first - Math.Truncate(first)) / 2;
-                first = Math.Truncate(first);
+                Second += (First - Math.Truncate(First)) / 2;
+                First = Math.Truncate(First);
             }
 
             //Округляем второй по полезности стат
-            if (second - Math.Truncate(second) > 0.8)
-                second = Math.Truncate(second) + 1;
+            if (Second - Math.Truncate(Second) > 0.8)
+                Second = Math.Truncate(Second) + 1;
             else
-                second = Math.Truncate(second);
+                Second = Math.Truncate(Second);
 
 
             //Выведем это говнище в виде оценки чтобы челам понятно было
 
             if (a.Piece == "Цветок" | a.Piece == "Перо") //Оценка 1
             {
-                if (first < 4)
+                if (First < 4)
                     return "-";
-                else if (first == 4)
-                    if (second >= 2)
+                else if (First == 4)
+                    if (Second >= 2)
                         return "Хорошо";
                     else
                         return "-";
-                else if (first == 5)
-                    if (second >= 2)
+                else if (First == 5)
+                    if (Second >= 2)
                         return "Отлично";
                     else
                         return "Хорошо";
-                else if (first == 6)
-                    if (second >= 2)
+                else if (First == 6)
+                    if (Second >= 2)
                         return "Идеально";
                     else
                         return "Отлично";
@@ -198,25 +202,25 @@ namespace StatCounter
             {
                 if (mainstatus == true) //Оценка 2
                 {
-                    if (second / 2 >= 1)
+                    if (Second / 2 >= 1)
                     {
-                        first += (second / 2) - ((second / 2) - Math.Truncate(second / 2));
-                        second = second - Math.Truncate(second / 2) * 2;
+                        First += (Second / 2) - ((Second / 2) - Math.Truncate(Second / 2));
+                        Second = Second - Math.Truncate(Second / 2) * 2;
                     }
-                    if (first < 4)
+                    if (First < 4)
                         return "-";
-                    else if (first == 4)
-                        if (second >= 1)
+                    else if (First == 4)
+                        if (Second >= 1)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 5)
-                        if (second >= 1)
+                    else if (First == 5)
+                        if (Second >= 1)
                             return "Отлично";
                         else
                             return "-";
-                    else if (first == 6)
-                        if (second >= 1)
+                    else if (First == 6)
+                        if (Second >= 1)
                             return "Идеально";
                         else
                             return "Отлично";
@@ -225,29 +229,29 @@ namespace StatCounter
                 }
                 else //Оценка 2 (+)
                 {
-                    if (first < 3)
+                    if (First < 3)
                         return "-";
-                    else if (first == 3)
-                        if (second >= 3)
+                    else if (First == 3)
+                        if (Second >= 3)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 4)
-                        if (second >= 3)
+                    else if (First == 4)
+                        if (Second >= 3)
                             return "Отлично";
-                        else if (second >= 1)
+                        else if (Second >= 1)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 5)
-                        if (second >= 3)
+                    else if (First == 5)
+                        if (Second >= 3)
                             return "Идеально";
-                        else if (second >= 1)
+                        else if (Second >= 1)
                             return "Отлично";
                         else
                             return "Хорошо";
-                    else if (first == 6)
-                        if (second >= 1)
+                    else if (First == 6)
+                        if (Second >= 1)
                             return "Идеально";
                         else
                             return "Отлично";
@@ -259,38 +263,38 @@ namespace StatCounter
             {
                 if (mainstatus == true) //Оценка 3
                 {
-                    if (second / 2 >= 1)
+                    if (Second / 2 >= 1)
                     {
-                        first += (second / 2) - ((second / 2) - Math.Truncate(second / 2));
-                        second = second - Math.Truncate(second / 2) * 2;
+                        First += (Second / 2) - ((Second / 2) - Math.Truncate(Second / 2));
+                        Second = Second - Math.Truncate(Second / 2) * 2;
                     }
-                    if (first < 4)
+                    if (First < 4)
                         return "-";
-                    else if (first == 4)
+                    else if (First == 4)
                             return "Хорошо";
-                    else if (first == 5)
+                    else if (First == 5)
                             return "Отлично";
-                    else if (first == 6)
+                    else if (First == 6)
                             return "Идеально";
                     else
                         return "Идеально";
                 }
                 else //Оценка 3 (+)
                 {
-                    if (first < 3)
+                    if (First < 3)
                         return "-";
-                    else if (first == 3)
-                        if (second >= 2)
+                    else if (First == 3)
+                        if (Second >= 2)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 4)
-                        if (second >= 2)
+                    else if (First == 4)
+                        if (Second >= 2)
                             return "Отлично";
                         else
                             return "Хорошо";
-                    else if (first == 5)
-                        if (second >= 2)
+                    else if (First == 5)
+                        if (Second >= 2)
                             return "Идеально";
                         else
                             return "Отлично";
@@ -303,25 +307,25 @@ namespace StatCounter
             {
                 if (mainstatus == true) //Оценка 4
                 {
-                    if (second / 2 >= 1)
+                    if (Second / 2 >= 1)
                     {
-                        first += (second / 2) - ((second / 2) - Math.Truncate(second / 2));
-                        second = second - Math.Truncate(second / 2)*2;
+                        First += (Second / 2) - ((Second / 2) - Math.Truncate(Second / 2));
+                        Second = Second - Math.Truncate(Second / 2)*2;
                     }
-                    if (first < 3)
+                    if (First < 3)
                         return "-";
-                    else if (first == 3)
-                        if (second >= 1)
+                    else if (First == 3)
+                        if (Second >= 1)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 4)
-                        if (second >= 1)
+                    else if (First == 4)
+                        if (Second >= 1)
                             return "Отлично";
                         else
                             return "Хорошо";
-                    else if (first == 5)
-                        if (second >= 1)
+                    else if (First == 5)
+                        if (Second >= 1)
                             return "Идеально";
                         else
                             return "Отлично";
@@ -330,29 +334,29 @@ namespace StatCounter
                 }
                 else //Оценка 4 (+)
                 {
-                    if (first < 2)
+                    if (First < 2)
                         return "-";
-                    else if (first == 2)
-                        if (second >= 3)
+                    else if (First == 2)
+                        if (Second >= 3)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 3)
-                        if (second >= 3)
+                    else if (First == 3)
+                        if (Second >= 3)
                             return "Отлично";
-                        else if (second >= 1)
+                        else if (Second >= 1)
                             return "Хорошо";
                         else
                             return "-";
-                    else if (first == 4)
-                        if (second >= 3)
+                    else if (First == 4)
+                        if (Second >= 3)
                             return "Идеально";
-                        else if (second >= 1)
+                        else if (Second >= 1)
                             return "Отлично";
                         else
                             return "Хорошо";
-                    else if (first == 5)
-                        if (second >= 1)
+                    else if (First == 5)
+                        if (Second >= 1)
                             return "Идеально";
                         else
                             return "Отлично";
