@@ -30,7 +30,7 @@ namespace StatCounter
 
         private void button1_Click(object sender, EventArgs e)
         {           
-            double atk1 = 0, def1 = 0, hp1 = 0, er1 = 0, critdmg1 = 0, critrate1 = 0, em1 = 0, atk = 0, def = 0, hp = 0, er = 0, critdmg = 0, critrate = 0, em = 0, sum = 9, sum1 = 4; 
+            double atkroll = 0, defroll = 0, hproll = 0, erroll = 0, critdmgroll = 0, critrateroll = 0, emroll = 0, atk = 0, def = 0, hp = 0, er = 0, critdmg = 0, critrate = 0, em = 0, sum = 9, sum1 = 4; 
             bool mistake = false;
 
             if(comboBox_piece.Text == "Цветок")
@@ -42,71 +42,67 @@ namespace StatCounter
                 comboBox_mainstat.Text = "Сила атаки, плоск.";
             }
 
-            TextBox[] textboxes = new TextBox[] { textBox_atk, textBox_hp, textBox_def, textBox_critdmg, textBox_critrate, textBox_er, textBox_em };
-            double[] stats = new double[] { atk, hp, def, critdmg, critrate, er, em }; // Списочек введенных статов
+            TextBox[] textboxes = new TextBox[] { textBox_atk, textBox_hp, textBox_def, textBox_critdmg, textBox_critrate, textBox_er, textBox_em };            
+            double[] stats = new double[] { atk, hp, def, critdmg, critrate, er, em };     // Списочек введенных статов
             double[] maxst = new double[] { 34.8, 34.8, 43.8, 46.8, 23.4, 39, 138 }; // Макс. роллы в один из статов
-            double[] rolls = new double[] { atk1, hp1, def1, critdmg1, critrate1, er1, em1 }; // Список в котором хранится кол-во роллов
+            double[] rolls = new double[] { atkroll, hproll, defroll, critdmgroll, critrateroll, erroll, emroll }; // Список в котором хранится кол-во роллов
             double[] r2 = new double[] { 5, 5, 6.2, 6.6, 3.3, 5.5, 19 }; // Средний ролл в один из статов
-            string[] list = new string[] { "Крит. урон %", "Шанс крит. попадания %", "Мастерство стихий", "Сила атаки %", "Восст. энергии %", "HP %", "Защита %" };            
+            string[] list = new string[] { "Сила атаки %", "HP %", "Защита %", "Крит. урон %", "Шанс крит. попадания %", "Восст. энергии %", "Мастерство стихий" };
+             
+
 
 
             for (int i = 0; i < 7; i++)
             {
-                textboxes[i].Text = textboxes[i].Text.Replace(".", ","); // Замена запятой на точку
+                textboxes[i].Text = textboxes[i].Text.Replace(".", ","); // замена запятой на точку
                 if (textboxes[i].Text == "")
-                    textboxes[i].Text = "0";
-
-                if (comboBox_mainstat.Text == list[i])
-                {
-                    MessageBox.Show("Данный стат уже в верхнем!");
-                    mistake = true;
-                }              
+                    textboxes[i].Text = "0";                            
 
                 try
                 {
-                    stats[i] = Convert.ToDouble(textboxes[i].Text); // перевод в количественную переменную вместо текстовой
+                    stats[i] = Convert.ToDouble(textboxes[i].Text);       // перевод в количественную переменную вместо текстовой
                 }
 
                 catch (Exception)
+                {                    
+                    mistake = true;
+                }
+
+                if (comboBox_mainstat.Text == list[i] & stats[i] > 0) // ошибка при попытке ввести роллы в комбобокс в верхний стат
                 {
-                    MessageBox.Show("Неверный формат ввода!");
                     mistake = true;
                 }
 
                 if (stats[i] > 0)
                 {
-                    sum1 -= 1; // минусуем одну ячейку в которой есть данные чтобы не было более 4 статов
-                    rolls[i] = Math.Round(stats[i] / r2[i], 0); //считаем роллы
-                    sum -= rolls[i]; // минусуем кол-во роллов в стат                   
-                    if (stats[i] <= maxst[i] & rolls[i] >= 6) // заполняем пробел между 9 средними роллами и 1 макс роллом в один стат и 3 роллами в статы 
+                    sum1 -= 1;                                    
+                    rolls[i] = Math.Round(stats[i] / r2[i], 0);  
+                    sum -= rolls[i];                                               
+                    if (stats[i] <= maxst[i] & rolls[i] >= 6)  // пробел между 9 средними роллами и 1 макс роллом в один стат и 3 роллами в статы 
                     {
                         sum = 1;
                     }
-                    if (stats[i] > maxst[i]) // чекинг на превышение макс статов
+                    if (stats[i] > maxst[i])  // чекинг на превышение макс статов
                     {
                         sum1 = -1;
-                    }
-                    
+                    }                    
                 }
             }
 
-            if (mistake == false)
+
+            if (mistake == true)
             {
-                if (sum1 < 0) // четырехстатник
-                {
-                    MessageBox.Show("Слишком много роллов!");
-                    mistake = true;
-                }
-                else if (sum < 0)
-                {
-                    MessageBox.Show("Слишком много роллов!");
-                    mistake = true;
-                }
+                MessageBox.Show("Неверный формат ввода!"); // вывод ошибки при неверном формате боксов
             }
-
-
-
-            if (mistake == false)
+            else if (sum1 < 0) 
+            {
+                MessageBox.Show("Слишком много роллов!"); // более 4 статов заполнено              
+            }
+            else if (sum < 0)
+            {
+                MessageBox.Show("Слишком много роллов!"); // более 9 роллов                
+            }        
+            else
             {
 
                 Artefact a = new Artefact(Convert.ToDouble(textBox_atk.Text), Convert.ToDouble(textBox_hp.Text),
@@ -217,7 +213,7 @@ namespace StatCounter
             string stat = Stat_Function(c, a);
             string set = Set_Function(c, a);
             Color aa = ColorizeStat(stat);
-            Color bb = ColorizeSet(set);
+            Color bb = ColorizeSet(set);           
             dataGridView1.Rows[i].Cells[0].Value = name;
             dataGridView1.Rows[i].Cells[1].Value = stat;
             dataGridView1.Rows[i].Cells[1].Style.ForeColor = aa;

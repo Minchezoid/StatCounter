@@ -256,7 +256,7 @@
             for (int i = 0; i < ArtNamesData.AllArtefacts.Length; i++)
             {
                 comboBox_set.Items.Add(ArtNamesData.AllArtefacts[i]);
-            }       
+            }
             // 
             // comboBox_piece
             // 
@@ -266,7 +266,7 @@
             "Перо",
             "Часы",
             "Кубок",
-            "Шапка"});
+            "Шапка" });
             this.comboBox_piece.Location = new System.Drawing.Point(327, 34);
             this.comboBox_piece.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_piece.Name = "comboBox_piece";
