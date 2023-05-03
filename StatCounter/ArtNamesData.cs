@@ -16,12 +16,12 @@ namespace StatCounter
         public const string WANDERERS_TROUPE = "Странствующий ансамбль";
         public const string NOBLESSE_OBLIGE = "Церемония древней знати"; 
         public const string BLOODSTAINED_CHIVALRY = "Рыцарь крови";
-        public const string MAIDEN_BELOVED = "Возлюбленная дева"; 
+        public const string MAIDEN_BELOVED = "Возлюбленная юная дева"; 
         public const string VIRIDESCENT_VENERER = "Изумрудная тень";
         public const string ARCHAIC_PETRA = "Архаичный камень"; 
         public const string RETRACING_BOLIDE = "Встречная комета";
         public const string THUNDER­SOOTHER = "Усмиряющий гром"; 
-        public const string THUNDERING_FURY = "Громогласный рев ярости";
+        public const string THUNDERING_FURY = "Громогласный рёв ярости";
         public const string LAVAWALKER = "Ступающий по лаве"; 
         public const string CRIMSON_WITCH_OF_FLAMES = "Горящая алая ведьма";
         public const string BLIZZARD_STRAYER = "Заблудший в метели"; 
@@ -34,7 +34,8 @@ namespace StatCounter
         public const string OCEAN_HUED_CLAM = "Моллюск морских красок";
         public const string VERMILLION_HEREAFTER = "Киноварное загробье"; 
         public const string ECHOES_OF_AN_OFFERING = "Отголоски подношения";
-        public const string DEEPWOOD_MEMORIES = "Воспоминания дремучего леса"; 
+        public const string DEEPWOOD_MEMORIES = "Воспоминания дремучего леса";
+        public const string GILDED_DREAMS = "Позолоченные сны";
         public const string DESERT_PAVILION_CHRONICLE = "Хроники Чертогов в пустыне";
         public const string FLOWER_OF_PARADISE_LOST = "Цветок потерянного рая"; 
         public const string NYMPHS_DREAM = "Сон нимфы";
@@ -67,6 +68,7 @@ namespace StatCounter
                 VERMILLION_HEREAFTER,
                 ECHOES_OF_AN_OFFERING,
                 DEEPWOOD_MEMORIES,
+                GILDED_DREAMS,
                 DESERT_PAVILION_CHRONICLE,
                 FLOWER_OF_PARADISE_LOST,
                 NYMPHS_DREAM,

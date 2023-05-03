@@ -21,39 +21,39 @@ namespace StatCounter
                     Name = "Ху Тао",
                     MainSets = new List<string>
                     {
-                        "Горящая алая ведьма"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES
                     },
                     AltSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Позолоченные сны"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.GILDED_DREAMS
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Стойкость Миллелита", "Цветок потерянного рая", "Сияние Вурукаши"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Мастерство стихий", "HP %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.HP_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %"
+                        StatNamesData.PYRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Ху Тао
 
@@ -62,39 +62,39 @@ namespace StatCounter
                     Name = "Дилюк",
                     MainSets = new List<string>
                     {
-                        "Горящая алая ведьма"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES
                     },
                     AltSets = new List<string>
                     {
-                        "Позолоченные сны", "Конец гладиатора"
+                        ArtNamesData.GILDED_DREAMS, ArtNamesData.GLADIATOR_FINALE
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Церемония древней знати", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %"
+                        StatNamesData.PYRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Дилюк
 
@@ -103,23 +103,23 @@ namespace StatCounter
                     Name = "Диона",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Возлюбленная юная дева"
+                        ArtNamesData.MAIDEN_BELOVED
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Стойкость Миллелита", "Сияние Вурукаши"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     GoodStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %", "Сила атаки %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
@@ -127,15 +127,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                 }, //Диона
 
@@ -144,39 +144,39 @@ namespace StatCounter
                     Name = "Райден",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        
+
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Сила атаки %", "Бонус Электро урона %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELECTRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Райден
 
@@ -185,39 +185,39 @@ namespace StatCounter
                     Name = "Чжун Ли",
                     MainSets = new List<string>
                     {
-                        "Стойкость Миллелита"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Конец гладиатора", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Архаичный камень", "Сияние Вурукаши"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.ARCHAIC_PETRA, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "HP %", "Сила атаки %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Сила атаки %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %", "Бонус Гео урона %"
+                        StatNamesData.HP_PERCENT, StatNamesData.GEO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %", "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.HP_PERCENT, StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Чжун Ли
 
@@ -226,23 +226,23 @@ namespace StatCounter
                     Name = "Яэ Мико",
                     MainSets = new List<string>
                     {
-                        
+
                     },
                     AltSets = new List<string>
                     {
-                        "Усмиряющий гром", "Позолоченные сны"
+                        ArtNamesData.THUNDER­SOOTHER, ArtNamesData.GILDED_DREAMS
                     },
                     SubSets = new List<string>
                     {
-                        "Конец гладиатора", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Громогласный рёв ярости", "Эмблема рассечённой судьбы", "Цветок потерянного рая"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.THUNDERING_FURY, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
@@ -250,15 +250,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %"
+                        StatNamesData.ELECTRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Яэ Мико
 
@@ -267,7 +267,7 @@ namespace StatCounter
                     Name = "Эола",
                     MainSets = new List<string>
                     {
-                        "Бледный огонь", "Рыцарь крови"
+                        ArtNamesData.PALE_FLAME, ArtNamesData.BLOODSTAINED_CHIVALRY
                     },
                     AltSets = new List<string>
                     {
@@ -275,31 +275,31 @@ namespace StatCounter
                     },
                     SubSets = new List<string>
                     {
-                        "Конец гладиатора", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Эмблема рассечённой судьбы", "Церемония древней знати"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус физ. урона %"
+                        StatNamesData.PHYS_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Эола
 
@@ -308,39 +308,39 @@ namespace StatCounter
                     Name = "Ёимия",
                     MainSets = new List<string>
                     {
-                        "Воспоминания Симэнавы"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE
                     },
                     AltSets = new List<string>
                     {
-                        "Горящая алая ведьма"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Конец гладиатора", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %"
+                        StatNamesData.PYRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Ёимия
 
@@ -349,39 +349,39 @@ namespace StatCounter
                     Name = "Аль-Хайтам",
                     MainSets = new List<string>
                     {
-                        "Позолоченные сны", "Воспоминания дремучего леса"
+                        ArtNamesData.GILDED_DREAMS, ArtNamesData.DEEPWOOD_MEMORIES
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Эмблема рассечённой судьбы", "Церемония древней знати", "Конец гладиатора"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Дендро урона %"
+                        StatNamesData.DENDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Аль-Хайтам
 
@@ -390,39 +390,39 @@ namespace StatCounter
                     Name = "Альбедо",
                     MainSets = new List<string>
                     {
-                        "Кокон сладких грёз"
+                        ArtNamesData.HUSK_OF_OPULENT_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Стойкость Миллелита", "Церемония древней знати"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Архаичный камень"
+                        ArtNamesData.ARCHAIC_PETRA
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Защита %"
+                        StatNamesData.DEF_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Защита %"
+                        StatNamesData.DEF_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гео урона %", "Защита %"
+                        StatNamesData.GEO_AMPLIFICATION, StatNamesData.DEF_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %", "Защита %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE, StatNamesData.DEF_PERCENT
                     },
                 }, //Альбедо
 
@@ -431,39 +431,39 @@ namespace StatCounter
                     Name = "Аяка",
                     MainSets = new List<string>
                     {
-                        "Заблудший в метели"
+                        ArtNamesData.BLIZZARD_STRAYER
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        
+
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %"
+                        StatNamesData.CRYO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %"
+                        StatNamesData.CRIT_DMG
                     },
                 }, //Аяка
 
@@ -472,39 +472,39 @@ namespace StatCounter
                     Name = "Аято",
                     MainSets = new List<string>
                     {
-                        "Сердце глубин"
+                        ArtNamesData.HEART_OF_DEPTH
                     },
                     AltSets = new List<string>
                     {
-                        "Конец гладиатора", "Отголоски подношения", "Сон нимфы"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.NYMPHS_DREAM
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Эмблема рассечённой судьбы"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гидро урона %"
+                        StatNamesData.HYDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Аято
 
@@ -513,39 +513,39 @@ namespace StatCounter
                     Name = "Барбара",
                     MainSets = new List<string>
                     {
-                        "Возлюбленная юная дева"
+                        ArtNamesData.MAIDEN_BELOVED
                     },
                     AltSets = new List<string>
                     {
-                        "Цветок потерянного рая"
+                        ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     SubSets = new List<string>
                     {
-                        "Стойкость Миллелита", "Эмблема рассечённой судьбы"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Шанс крит. попадания %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.CRIT_RATE
                     },
                     OkStats = new List<string>
                     {
-                        "Крит. урон %"
+                        StatNamesData.CRIT_DMG
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гидро урона %", "HP %"
+                        StatNamesData.HYDRO_AMPLIFICATION, StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Бонус лечения %", "Шанс крит. попадания %"
+                        StatNamesData.HEALING_BONUS, StatNamesData.CRIT_RATE
                     },
                 }, //Барбара
 
@@ -554,39 +554,39 @@ namespace StatCounter
                     Name = "Беннет",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Стойкость Миллелита", "Эмблема рассечённой судьбы", "Горящая алая ведьма", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Сияние Вурукаши"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.CRIMSON_WITCH_OF_FLAMES, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "HP %"
+                        StatNamesData.CRIT_RATE, StatNamesData.HP_PERCENT
                     },
                 }, //Беннет
 
@@ -595,39 +595,39 @@ namespace StatCounter
                     Name = "Бэй Доу",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     AltSets = new List<string>
                     {
-                        "Громогласный рёв ярости"
+                        ArtNamesData.THUNDERING_FURY
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Громогласный рёв ярости", "Церемония древней знати"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.THUNDERING_FURY, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %", "Сила атаки %"
+                        StatNamesData.ELECTRO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Бэй Доу
 
@@ -636,39 +636,39 @@ namespace StatCounter
                     Name = "Розария",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Церемония древней знати"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Заблудший в метели"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.BLIZZARD_STRAYER
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %", "Сила атаки %"
+                        StatNamesData.CRYO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Розария
 
@@ -677,39 +677,39 @@ namespace StatCounter
                     Name = "Син Цю",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Сердце глубин", "Сон нимфы"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.HEART_OF_DEPTH, ArtNamesData.NYMPHS_DREAM
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гидро урона %"
+                        StatNamesData.HYDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Син Цю
 
@@ -718,39 +718,39 @@ namespace StatCounter
                     Name = "Е Лань",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Стойкость Миллелита", "Сердце глубин", "Сон нимфы", "Сияние Вурукаши"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.HEART_OF_DEPTH, ArtNamesData.NYMPHS_DREAM, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гидро урона %"
+                        StatNamesData.HYDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Е Лань
 
@@ -759,39 +759,39 @@ namespace StatCounter
                     Name = "Чун Юнь",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Заблудший в метели"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.BLIZZARD_STRAYER
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %"
+                        StatNamesData.CRYO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Чун Юнь
 
@@ -800,39 +800,39 @@ namespace StatCounter
                     Name = "Шэнь Хэ",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Заблудший в метели", "Эмблема рассечённой судьбы"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.BLIZZARD_STRAYER, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %", "Сила атаки %"
+                        StatNamesData.CRYO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %", "Сила атаки %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG, StatNamesData.ATK_PERCENT
                     },
                 }, //Шэнь Хэ
 
@@ -841,23 +841,23 @@ namespace StatCounter
                     Name = "Ци Ци",
                     MainSets = new List<string>
                     {
-                        "Моллюск морских красок"
+                        ArtNamesData.OCEAN_HUED_CLAM
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати", "Стойкость Миллелита", "Возлюбленная юная дева"
+                        ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.MAIDEN_BELOVED
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Заблудший в метели", "Эмблема рассечённой судьбы"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.BLIZZARD_STRAYER, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     OkStats = new List<string>
                     {
@@ -865,15 +865,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %", "Сила атаки %"
+                        StatNamesData.CRYO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Сила атаки %", "Бонус лечения %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ATK_PERCENT, StatNamesData.HEALING_BONUS
                     },
                 }, //Ци Ци
 
@@ -882,23 +882,23 @@ namespace StatCounter
                     Name = "Кэйа",
                     MainSets = new List<string>
                     {
-                        "Заблудший в метели"
+                        ArtNamesData.BLIZZARD_STRAYER
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Церемония древней знати"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
@@ -906,15 +906,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %"
+                        StatNamesData.CRYO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Сила атаки %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ATK_PERCENT
                     },
                 }, //Кэйа
 
@@ -923,23 +923,23 @@ namespace StatCounter
                     Name = "Лайла",
                     MainSets = new List<string>
                     {
-                        "Стойкость Миллелита"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати", "Сияние Вурукаши"
+                        ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     SubSets = new List<string>
                     {
-                        
+
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
@@ -947,15 +947,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                 }, //Лайла
 
@@ -964,39 +964,39 @@ namespace StatCounter
                     Name = "Гань Юй",
                     MainSets = new List<string>
                     {
-                        "Странствующий ансамбль"
+                        ArtNamesData.WANDERERS_TROUPE
                     },
                     AltSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Заблудший в метели"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.BLIZZARD_STRAYER, ArtNamesData.LAVAWALKER
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Эмблема рассечённой судьбы", "Церемония древней знати", "Конец гладиатора"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %"
+                        StatNamesData.CRYO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Сила атаки %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ATK_PERCENT
                     },
                 }, //Гань Юй
 
@@ -1005,39 +1005,39 @@ namespace StatCounter
                     Name = "Кокоми",
                     MainSets = new List<string>
                     {
-                        "Стойкость Миллелита", "Моллюск морских красок"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.OCEAN_HUED_CLAM
                     },
                     AltSets = new List<string>
                     {
-                        "Цветок потерянного рая", "Сияние Вурукаши"
+                        ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Цветок потерянного рая", "Эмблема рассечённой судьбы", "Конец гладиатора"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Восст. энергии", "Сила атаки %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     GoodStats = new List<string>
                     {
-                        
+
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %", "Бонус Гидро урона %"
+                        StatNamesData.HP_PERCENT, StatNamesData.HYDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %", "Бонус лечения %"
+                        StatNamesData.HP_PERCENT, StatNamesData.HEALING_BONUS
                     },
                 }, //Кокоми
 
@@ -1046,39 +1046,39 @@ namespace StatCounter
                     Name = "Горо",
                     MainSets = new List<string>
                     {
-                        "Кокон сладких грёз"
+                        ArtNamesData.HUSK_OF_OPULENT_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Защита %", "Восст. энергии %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Защита %", "Восст. энергии %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Защита %"
+                        StatNamesData.DEF_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Защита %", "Шанс крит. попадания %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.CRIT_RATE
                     },
                 }, //Горо
 
@@ -1087,39 +1087,39 @@ namespace StatCounter
                     Name = "Итто",
                     MainSets = new List<string>
                     {
-                        "Кокон сладких грёз"
+                        ArtNamesData.HUSK_OF_OPULENT_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Встречная комета"
+                        ArtNamesData.RETRACING_BOLIDE
                     },
                     SubSets = new List<string>
                     {
-                        "Архаичный камень"
+                        ArtNamesData.ARCHAIC_PETRA
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Защита %", "Восст. энергии %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Защита %"
+                        StatNamesData.DEF_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гео урона %", "Защита %"
+                        StatNamesData.GEO_AMPLIFICATION, StatNamesData.DEF_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Итто
 
@@ -1128,39 +1128,39 @@ namespace StatCounter
                     Name = "Ноэлль",
                     MainSets = new List<string>
                     {
-                        "Кокон сладких грёз"
+                        ArtNamesData.HUSK_OF_OPULENT_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Конец гладиатора", "Встречная комета"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.RETRACING_BOLIDE
                     },
                     SubSets = new List<string>
                     {
-                        "Архаичный камень"
+                        ArtNamesData.ARCHAIC_PETRA
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Защита %", "Восст. энергии %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Защита %"
+                        StatNamesData.DEF_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гео урона %", "Защита %"
+                        StatNamesData.GEO_AMPLIFICATION, StatNamesData.DEF_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Ноэлль
 
@@ -1169,39 +1169,39 @@ namespace StatCounter
                     Name = "Нин Гуан",
                     MainSets = new List<string>
                     {
-                        
+
                     },
                     AltSets = new List<string>
                     {
-                        "Встречная комета", "Архаичный камень", "Странствующий ансамбль"
+                        ArtNamesData.RETRACING_BOLIDE, ArtNamesData.ARCHAIC_PETRA, ArtNamesData.WANDERERS_TROUPE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Эмблема рассечённой судьбы", "Церемония древней знати"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гео урона %"
+                        StatNamesData.GEO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Нин Гуан
 
@@ -1210,39 +1210,39 @@ namespace StatCounter
                     Name = "Сахароза",
                     MainSets = new List<string>
                     {
-                        "Изумрудная тень"
+                        ArtNamesData.VIRIDESCENT_VENERER
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Позолоченные сны", "Цветок потерянного рая", "Эмблема рассечённой судьбы", "Хроники Чертогов в пустыне"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %", "Мастерство стихий"
+                        StatNamesData.ANEMO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Мастерство стихий"
+                        StatNamesData.CRIT_RATE, StatNamesData.ELEMENTAL_MASTERY
                     },
                 }, //Сахароза
 
@@ -1251,7 +1251,7 @@ namespace StatCounter
                     Name = "Кадзуха",
                     MainSets = new List<string>
                     {
-                        "Изумрудная тень"
+                        ArtNamesData.VIRIDESCENT_VENERER
                     },
                     AltSets = new List<string>
                     {
@@ -1259,31 +1259,31 @@ namespace StatCounter
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Позолоченные сны", "Цветок потерянного рая", "Эмблема рассечённой судьбы", "Хроники Чертогов в пустыне"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %", "Мастерство стихий"
+                        StatNamesData.ANEMO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Мастерство стихий"
+                        StatNamesData.CRIT_RATE, StatNamesData.ELEMENTAL_MASTERY
                     },
                 }, //Кадзуха
 
@@ -1292,39 +1292,39 @@ namespace StatCounter
                     Name = "Джинн",
                     MainSets = new List<string>
                     {
-                        "Изумрудная тень"
+                        ArtNamesData.VIRIDESCENT_VENERER
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Эмблема рассечённой судьбы", "Хроники Чертогов в пустыне"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %"
+                        StatNamesData.ANEMO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Джинн
 
@@ -1333,23 +1333,23 @@ namespace StatCounter
                     Name = "Венти",
                     MainSets = new List<string>
                     {
-                        "Изумрудная тень"
+                        ArtNamesData.VIRIDESCENT_VENERER
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Эмблема рассечённой судьбы", "Хроники Чертогов в пустыне"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
@@ -1357,15 +1357,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %", "Мастерство стихий"
+                        StatNamesData.ANEMO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %", "Мастерство стихий", "Сила атаки %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ATK_PERCENT
                     },
                 }, //Венти
 
@@ -1374,23 +1374,23 @@ namespace StatCounter
                     Name = "Сяо",
                     MainSets = new List<string>
                     {
-                        "Киноварное загробье"
+                        ArtNamesData.VERMILLION_HEREAFTER
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Отголоски подношения", "Конец гладиатора", "Эмблема рассечённой судьбы", "Хроники Чертогов в пустыне", "Изумрудная тень"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.DESERT_PAVILION_CHRONICLE, ArtNamesData.VIRIDESCENT_VENERER
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
@@ -1398,15 +1398,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %", "Сила атаки %"
+                        StatNamesData.ANEMO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Сяо
 
@@ -1415,39 +1415,39 @@ namespace StatCounter
                     Name = "Странник",
                     MainSets = new List<string>
                     {
-                        "Хроники Чертогов в пустыне"
+                        ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     AltSets = new List<string>
                     {
-                        "Изумрудная тень"
+                        ArtNamesData.VIRIDESCENT_VENERER
                     },
                     SubSets = new List<string>
                     {
-                        "Киноварное загробье", "Воспоминания Симэнавы", "Отголоски подношения", "Конец гладиатора", "Эмблема рассечённой судьбы", "Изумрудная тень"
+                        ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.VIRIDESCENT_VENERER
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %"
+                        StatNamesData.ANEMO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Странник
 
@@ -1456,39 +1456,39 @@ namespace StatCounter
                     Name = "Хэйдзо",
                     MainSets = new List<string>
                     {
-                        "Изумрудная тень"
+                        ArtNamesData.VIRIDESCENT_VENERER
                     },
                     AltSets = new List<string>
                     {
-                        
+
                     },
                     SubSets = new List<string>
                     {
-                        "Киноварное загробье", "Воспоминания Симэнавы", "Отголоски подношения", "Конец гладиатора", "Хроники Чертогов в пустыне"
+                        ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %", "Мастерство стихий"
+                        StatNamesData.ANEMO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %", "Мастерство стихий"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG, StatNamesData.ELEMENTAL_MASTERY
                     },
                 }, //Хэйдзо
 
@@ -1497,23 +1497,23 @@ namespace StatCounter
                     Name = "Фарузан",
                     MainSets = new List<string>
                     {
-                        "Изумрудная тень", "Церемония древней знати"
+                        ArtNamesData.VIRIDESCENT_VENERER, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Стойкость Миллелита"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     SubSets = new List<string>
                     {
-                        "Киноварное загробье", "Воспоминания Симэнавы", "Отголоски подношения", "Конец гладиатора", "Хроники Чертогов в пустыне"
+                        ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.DESERT_PAVILION_CHRONICLE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Восст. энергии %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Крит. урон %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
@@ -1521,15 +1521,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Анемо урона %"
+                        StatNamesData.ANEMO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Фарузан
 
@@ -1538,39 +1538,39 @@ namespace StatCounter
                     Name = "Тарталья",
                     MainSets = new List<string>
                     {
-                        "Сердце глубин", "Сон нимфы"
+                        ArtNamesData.HEART_OF_DEPTH, ArtNamesData.NYMPHS_DREAM
                     },
                     AltSets = new List<string>
                     {
-                        "Конец гладиатора"
+                        ArtNamesData.GLADIATOR_FINALE
                     },
                     SubSets = new List<string>
                     {
-                        "Киноварное загробье", "Воспоминания Симэнавы", "Отголоски подношения", "Церемония древней знати"
+                        ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гидро урона %"
+                        StatNamesData.HYDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Тарталья
 
@@ -1579,39 +1579,39 @@ namespace StatCounter
                     Name = "Мона",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     SubSets = new List<string>
                     {
-                        "Конец гладиатора", "Киноварное загробье", "Воспоминания Симэнавы", "Отголоски подношения", "Сердце глубин", "Сон нимфы"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.HEART_OF_DEPTH, ArtNamesData.NYMPHS_DREAM
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гидро урона %"
+                        StatNamesData.HYDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Мона
 
@@ -1620,23 +1620,23 @@ namespace StatCounter
                     Name = "Нилу",
                     MainSets = new List<string>
                     {
-                        "Стойкость Миллелита"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати", "Сердце глубин", "Позолоченные сны", "Цветок потерянного рая", "Сон нимфы", 
+                        ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.HEART_OF_DEPTH, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.NYMPHS_DREAM,
                     },
                     SubSets = new List<string>
                     {
-                        "Сияние Вурукаши"
+                        ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GoodStats = new List<string>
                     {
-                        
+
                     },
                     OkStats = new List<string>
                     {
@@ -1644,15 +1644,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                 }, //Нилу
 
@@ -1661,23 +1661,23 @@ namespace StatCounter
                     Name = "Кандакия",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати", "Эмблема рассечённой судьбы"
+                        ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     AltSets = new List<string>
                     {
-                        "Конец гладиатора", "Сердце глубин", "Сияние Вурукаши"
+                        ArtNamesData.GLADIATOR_FINALE, ArtNamesData.HEART_OF_DEPTH, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     SubSets = new List<string>
                     {
-                        "Сон нимфы"
+                        ArtNamesData.NYMPHS_DREAM
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
@@ -1685,15 +1685,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                 }, //Кандакия
 
@@ -1702,39 +1702,39 @@ namespace StatCounter
                     Name = "Янь Фэй",
                     MainSets = new List<string>
                     {
-                        "Горящая алая ведьма"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES
                     },
                     AltSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Воспоминания Симэнавы", "Позолоченные сны"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.GILDED_DREAMS
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Конец гладиатора"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %", "Сила атаки %"
+                        StatNamesData.PYRO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Янь Фэй
 
@@ -1743,39 +1743,39 @@ namespace StatCounter
                     Name = "Кли",
                     MainSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Горящая алая ведьма"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.CRIMSON_WITCH_OF_FLAMES
                     },
                     AltSets = new List<string>
                     {
-                        "Позолоченные сны"
+                        ArtNamesData.GILDED_DREAMS
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Конец гладиатора"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %", "Сила атаки %"
+                        StatNamesData.PYRO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Кли
 
@@ -1784,39 +1784,39 @@ namespace StatCounter
                     Name = "Сян Лин",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     AltSets = new List<string>
                     {
-                        "Горящая алая ведьма", "Позолоченные сны"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES, ArtNamesData.GILDED_DREAMS
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Странствующий ансамбль", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Конец гладиатора", "Церемония древней знати"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.WANDERERS_TROUPE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %"
+                        StatNamesData.PYRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Сян Лин
 
@@ -1825,23 +1825,23 @@ namespace StatCounter
                     Name = "Эмбер",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Горящая алая ведьма", "Странствующий ансамбль"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.CRIMSON_WITCH_OF_FLAMES, ArtNamesData.WANDERERS_TROUPE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Конец гладиатора"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
@@ -1849,15 +1849,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %"
+                        StatNamesData.PYRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Эмбер
 
@@ -1866,39 +1866,39 @@ namespace StatCounter
                     Name = "Синь Янь",
                     MainSets = new List<string>
                     {
-                        "Стойкость Миллелита"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Церемония древней знати"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Горящая алая ведьма", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Бледный огонь", "Рыцарь крови"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.PALE_FLAME, ArtNamesData.BLOODSTAINED_CHIVALRY
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Сила атаки %"
+                        StatNamesData.CRIT_DMG, StatNamesData.ATK_PERCENT
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Защита %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.DEF_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Шанс крит. попадания %"
+                        StatNamesData.CRIT_RATE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %", "Защита %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.DEF_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %", "Защита %", "Бонус физ. урона %"
+                        StatNamesData.PYRO_AMPLIFICATION, StatNamesData.DEF_PERCENT, StatNamesData.PHYS_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Защита %"
+                        StatNamesData.CRIT_DMG, StatNamesData.DEF_PERCENT
                     },
                 }, //Синь Янь
 
@@ -1907,39 +1907,39 @@ namespace StatCounter
                     Name = "Юнь Цзинь",
                     MainSets = new List<string>
                     {
-                        "Кокон сладких грёз"
+                        ArtNamesData.HUSK_OF_OPULENT_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Архаичный камень", "Эмблема рассечённой судьбы"
+                        ArtNamesData.ARCHAIC_PETRA, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Защита %", "Восст. энергии %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Защита %", "Восст. энергии %"
+                        StatNamesData.DEF_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Гео урона %", "Защита %"
+                        StatNamesData.GEO_AMPLIFICATION, StatNamesData.DEF_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Защита %"
+                        StatNamesData.CRIT_RATE, StatNamesData.DEF_PERCENT
                     },
                 }, //Юнь Цзинь
 
@@ -1948,39 +1948,39 @@ namespace StatCounter
                     Name = "Тома",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Позолоченные сны"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.GILDED_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Цветок потерянного рая"
+                        ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     SubSets = new List<string>
                     {
-                        "Стойкость Миллелита"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     PerfectStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %", "Мастерство стихий"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Шанс крит. попадания %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.CRIT_RATE
                     },
                     OkStats = new List<string>
                     {
-                        "Крит. урон %"
+                        StatNamesData.CRIT_DMG
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий", "Восст. энергии %", "HP %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %", "HP %", "Мастерство стихий"
+                        StatNamesData.PYRO_AMPLIFICATION, StatNamesData.HP_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Мастерство стихий", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.CRIT_RATE
                     },
                 }, //Тома
 
@@ -1989,39 +1989,39 @@ namespace StatCounter
                     Name = "Коллеи",
                     MainSets = new List<string>
                     {
-                        "Воспоминания дремучего леса"
+                        ArtNamesData.DEEPWOOD_MEMORIES
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати", "Эмблема рассечённой судьбы"
+                        ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Эмблема рассечённой судьбы", "Церемония древней знати", "Конец гладиатора"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий", "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Дендро урона %"
+                        StatNamesData.DENDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Коллеи
 
@@ -2030,39 +2030,39 @@ namespace StatCounter
                     Name = "Нахида",
                     MainSets = new List<string>
                     {
-                        "Воспоминания дремучего леса", "Позолоченные сны"
+                        ArtNamesData.DEEPWOOD_MEMORIES, ArtNamesData.GILDED_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                       
+
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Цветок потерянного рая"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Дендро урона %", "Мастерство стихий"
+                        StatNamesData.DENDRO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %", "Мастерство стихий"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE, StatNamesData.ELEMENTAL_MASTERY
                     },
                 }, //Нахида
 
@@ -2071,39 +2071,39 @@ namespace StatCounter
                     Name = "Тигнари",
                     MainSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Воспоминания дремучего леса"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.DEEPWOOD_MEMORIES
                     },
                     AltSets = new List<string>
                     {
-                        "Позолоченные сны"
+                        ArtNamesData.GILDED_DREAMS
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Цветок потерянного рая", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Мастерство стихий", "Сила атаки %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий", "Сила атаки %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Дендро урона %"
+                        StatNamesData.DENDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Тигнари
 
@@ -2112,23 +2112,23 @@ namespace StatCounter
                     Name = "Яо Яо",
                     MainSets = new List<string>
                     {
-                        "Воспоминания дремучего леса"
+                        ArtNamesData.DEEPWOOD_MEMORIES
                     },
                     AltSets = new List<string>
                     {
-                        "Стойкость Миллелита", "Сияние Вурукаши"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Возлюбленная юная дева"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.MAIDEN_BELOVED
                     },
                     PerfectStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Мастерство стихий", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.CRIT_DMG
                     },
                     OkStats = new List<string>
                     {
@@ -2136,15 +2136,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий", "Восст. энергии %", "HP %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %", "Бонус Дендро урона %"
+                        StatNamesData.HP_PERCENT, StatNamesData.DENDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "HP %"
+                        StatNamesData.CRIT_RATE, StatNamesData.HP_PERCENT
                     },
                 }, //Яо Яо
 
@@ -2153,23 +2153,23 @@ namespace StatCounter
                     Name = "Рэйзор",
                     MainSets = new List<string>
                     {
-                        "Бледный огонь"
+                        ArtNamesData.PALE_FLAME
                     },
                     AltSets = new List<string>
                     {
-                        "Конец гладиатора"
+                        ArtNamesData.GLADIATOR_FINALE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Эмблема рассечённой судьбы", "Церемония древней знати", "Рыцарь крови"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.BLOODSTAINED_CHIVALRY
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "Сила атаки %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
@@ -2177,15 +2177,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус физ. урона %"
+                        StatNamesData.PHYS_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Рэйзор
 
@@ -2194,39 +2194,39 @@ namespace StatCounter
                     Name = "Фишль",
                     MainSets = new List<string>
                     {
-                        
+
                     },
                     AltSets = new List<string>
                     {
-                        "Позолоченные сны", "Громогласный рёв ярости", "Стойкость Миллелита"
+                        ArtNamesData.GILDED_DREAMS, ArtNamesData.THUNDERING_FURY, ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        StatNamesData.ENERGY_RECHARGE
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %", "Сила атаки %"
+                        StatNamesData.ELECTRO_AMPLIFICATION, StatNamesData.ATK_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Фишль
 
@@ -2235,39 +2235,39 @@ namespace StatCounter
                     Name = "Кэ Цин",
                     MainSets = new List<string>
                     {
-                        "Громогласный рёв ярости"
+                        ArtNamesData.THUNDERING_FURY
                     },
                     AltSets = new List<string>
                     {
-                        "Усмиряющий гром"
+                        ArtNamesData.THUNDER­SOOTHER
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Церемония древней знати"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.NOBLESSE_OBLIGE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %"
+                        StatNamesData.ELECTRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Кэ Цин
 
@@ -2276,23 +2276,23 @@ namespace StatCounter
                     Name = "Лиза",
                     MainSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Позолоченные сны"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.GILDED_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Громогласный рёв ярости", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора", "Странствующий ансамбль", "Цветок потерянного рая"
+                        ArtNamesData.THUNDERING_FURY, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.WANDERERS_TROUPE, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
@@ -2300,15 +2300,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %", "Мастерство стихий"
+                        StatNamesData.ELECTRO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %", "Мастерство стихий"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG, StatNamesData.ELEMENTAL_MASTERY
                     },
                 }, //Лиза
 
@@ -2317,23 +2317,23 @@ namespace StatCounter
                     Name = "Сара",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE
                     },
                     SubSets = new List<string>
                     {
-                        "Громогласный рёв ярости", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Конец гладиатора"
+                        ArtNamesData.THUNDERING_FURY, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
@@ -2341,15 +2341,15 @@ namespace StatCounter
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %", "Мастерство стихий"
+                        StatNamesData.ELECTRO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Сара
 
@@ -2358,39 +2358,39 @@ namespace StatCounter
                     Name = "Синобу",
                     MainSets = new List<string>
                     {
-                        "Стойкость Миллелита"
+                        ArtNamesData.TENACITY_OF_THE_MILLELITH
                     },
                     AltSets = new List<string>
                     {
-                        "Воспоминания дремучего леса", "Позолоченные сны", "Цветок потерянного рая"
+                        ArtNamesData.DEEPWOOD_MEMORIES, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Странствующий ансамбль", "Цветок потерянного рая", "Сияние Вурукаши"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.WANDERERS_TROUPE, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Восст. энергии %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Крит. урон %", "Сила атаки %"
+                        StatNamesData.CRIT_DMG, StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Сила атаки %", "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %", "Бонус Электро урона %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ELECTRO_AMPLIFICATION, StatNamesData.ELEMENTAL_MASTERY
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %", "Бонус лечения %", "Шанс крит. попадания %", "Крит. урон %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.HEALING_BONUS, StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG, StatNamesData.ELEMENTAL_MASTERY
                     },
                 }, //Синобу
 
@@ -2399,39 +2399,39 @@ namespace StatCounter
                     Name = "Сайно",
                     MainSets = new List<string>
                     {
-                        "Позолоченные сны"
+                        ArtNamesData.GILDED_DREAMS
                     },
                     AltSets = new List<string>
                     {
-                        "Громогласный рёв ярости", "Усмиряющий гром"
+                        ArtNamesData.THUNDERING_FURY, ArtNamesData.THUNDER­SOOTHER
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Странствующий ансамбль", "Цветок потерянного рая"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.WANDERERS_TROUPE, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Мастерство стихий", "Восст. энергии %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %", "Мастерство стихий"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Электро урона %"
+                        StatNamesData.ELECTRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Сайно
 
@@ -2440,39 +2440,39 @@ namespace StatCounter
                     Name = "Дори",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати", "Моллюск морских красок"
+                        ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.OCEAN_HUED_CLAM
                     },
                     AltSets = new List<string>
                     {
-                        "Цветок потерянного рая"
+                        ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Стойкость Миллелита", "Сияние Вурукаши"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GoodStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Сила атаки %"
+                        StatNamesData.CRIT_RATE, StatNamesData.ATK_PERCENT
                     },
                     OkStats = new List<string>
                     {
-                        "Крит. урон %"
+                        StatNamesData.CRIT_DMG
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %", "Бонус лечения %"
+                        StatNamesData.HP_PERCENT, StatNamesData.HEALING_BONUS
                     },
                 }, //Дори
 
@@ -2481,39 +2481,39 @@ namespace StatCounter
                     Name = "Дэхья",
                     MainSets = new List<string>
                     {
-                        "Горящая алая ведьма", "Сияние Вурукаши"
+                        ArtNamesData.CRIMSON_WITCH_OF_FLAMES, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     AltSets = new List<string>
                     {
-                        "Моллюск морских красок", "Позолоченные сны", "Конец гладиатора", "Эмблема рассечённой судьбы", "Стойкость Миллелита"
+                        ArtNamesData.OCEAN_HUED_CLAM, ArtNamesData.GILDED_DREAMS, ArtNamesData.GLADIATOR_FINALE, ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.LAVAWALKER
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Церемония древней знати", "Воспоминания Симэнавы", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     GoodStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %", "Мастерство стихий"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     OkStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Пиро урона %"
+                        StatNamesData.PYRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                 }, //Дэхья
 
@@ -2522,39 +2522,39 @@ namespace StatCounter
                     Name = "Мика",
                     MainSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     AltSets = new List<string>
                     {
-                        "Моллюск морских красок"
+                        ArtNamesData.OCEAN_HUED_CLAM
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Стойкость Миллелита", "Сияние Вурукаши"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "Восст. энергии %", "HP %"
+                        StatNamesData.ENERGY_RECHARGE, StatNamesData.HP_PERCENT
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Крит. урон %", "Шанс крит. попадания %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.CRIT_DMG, StatNamesData.CRIT_RATE
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                 }, //Мика
 
@@ -2563,39 +2563,39 @@ namespace StatCounter
                     Name = "Бай Чжу",
                     MainSets = new List<string>
                     {
-                        "Воспоминания дремучего леса"
+                        ArtNamesData.DEEPWOOD_MEMORIES
                     },
                     AltSets = new List<string>
                     {
-                        "Церемония древней знати"
+                        ArtNamesData.NOBLESSE_OBLIGE
                     },
                     SubSets = new List<string>
                     {
-                        "Эмблема рассечённой судьбы", "Стойкость Миллелита", "Цветок потерянного рая", "Сияние Вурукаши"
+                        ArtNamesData.EMBLEM_OF_SEVERED_FATE, ArtNamesData.TENACITY_OF_THE_MILLELITH, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.VOURUKASHAS_GLOW
                     },
                     PerfectStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %", "Мастерство стихий"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE, StatNamesData.ELEMENTAL_MASTERY
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Шанс крит. попадания %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.CRIT_RATE
                     },
                     OkStats = new List<string>
                     {
-                        "Крит. урон %"
+                        StatNamesData.CRIT_DMG
                     },
                     ClockStats = new List<string>
                     {
-                        "HP %", "Восст. энергии %"
+                        StatNamesData.HP_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                     CrownStats = new List<string>
                     {
-                        "HP %"
+                        StatNamesData.HP_PERCENT
                     },
                 }, //Бай Чжу
 
@@ -2604,39 +2604,39 @@ namespace StatCounter
                     Name = "Кавех",
                     MainSets = new List<string>
                     {
-                        "Воспоминания дремучего леса", "Цветок потерянного рая"
+                        ArtNamesData.DEEPWOOD_MEMORIES, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     AltSets = new List<string>
                     {
-                        "Позолоченные сны", "Конец гладиатора"
+                        ArtNamesData.GILDED_DREAMS, ArtNamesData.GLADIATOR_FINALE
                     },
                     SubSets = new List<string>
                     {
-                        "Воспоминания Симэнавы", "Странствующий ансамбль", "Цветок потерянного рая"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE, ArtNamesData.WANDERERS_TROUPE, ArtNamesData.FLOWER_OF_PARADISE_LOST
                     },
                     PerfectStats = new List<string>
                     {
-                        "Мастерство стихий", "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Сила атаки %", "Восст. энергии %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        
+
                     },
                     ClockStats = new List<string>
                     {
-                        "Мастерство стихий", "Сила атаки %"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ATK_PERCENT
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Дендро урона %"
+                        StatNamesData.DENDRO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Кавех
 
@@ -2645,39 +2645,39 @@ namespace StatCounter
                     Name = "Элой",
                     MainSets = new List<string>
                     {
-                        "Воспоминания Симэнавы"
+                        ArtNamesData.SHIMENAWAS_REMINISCENCE
                     },
                     AltSets = new List<string>
                     {
-                        "Заблудший в метели"
+                        ArtNamesData.BLIZZARD_STRAYER
                     },
                     SubSets = new List<string>
                     {
-                        "Странствующий ансамбль", "Церемония древней знати", "Киноварное загробье", "Отголоски подношения", "Позолоченные сны", "Цветок потерянного рая", "Конец гладиатора"
+                        ArtNamesData.WANDERERS_TROUPE, ArtNamesData.NOBLESSE_OBLIGE, ArtNamesData.VERMILLION_HEREAFTER, ArtNamesData.ECHOES_OF_AN_OFFERING, ArtNamesData.GILDED_DREAMS, ArtNamesData.FLOWER_OF_PARADISE_LOST, ArtNamesData.GLADIATOR_FINALE
                     },
                     PerfectStats = new List<string>
                     {
-                        "Сила атаки %", "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                     GoodStats = new List<string>
                     {
-                        "Мастерство стихий"
+                        StatNamesData.ELEMENTAL_MASTERY, StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     OkStats = new List<string>
                     {
-                        "Восст. энергии %"
+                        
                     },
                     ClockStats = new List<string>
                     {
-                        "Сила атаки %"
+                        StatNamesData.ATK_PERCENT, StatNamesData.ENERGY_RECHARGE
                     },
                     GobletStats = new List<string>
                     {
-                        "Бонус Крио урона %"
+                        StatNamesData.CRYO_AMPLIFICATION
                     },
                     CrownStats = new List<string>
                     {
-                        "Шанс крит. попадания %", "Крит. урон %"
+                        StatNamesData.CRIT_RATE, StatNamesData.CRIT_DMG
                     },
                 }, //Элой
             };
